@@ -1,0 +1,121 @@
+.form {
+
+	$this: &;
+
+	&__fieldset {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1em;
+
+		&:first-of-type,
+		& + & {
+			margin-block-start: 1em;
+		}
+
+		// * если это единственный контейнер для формы
+		&:first-of-type:last-of-type {
+
+			// * прячем кнопки
+			#{$this}__button {
+				&--remove,
+				&--order {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__input {
+
+		transition: .25s ease-in-out !important;
+		transition-property: color, background-color !important;
+
+		&--email {
+			margin: 0 !important;
+		}
+
+		&--error {
+			background-color: hsl(0 100% 50% / .25) !important;
+		}
+	}
+
+	&__button {
+		padding: 0;
+
+		min-width: 2em;
+		max-width: 2em;
+		min-height: 2em;
+		max-height: 2em;
+
+		font-size: 16px;
+
+		background-color: unset;
+
+		transition: .25s ease-in-out;
+		transition-property: color, background-color;
+
+		&:active,
+		&:hover,
+		&:focus,
+		&:focus-visible {
+			background-color: unset;
+		}
+
+		&--add {
+			order: 1;
+			color: hsl(120 50% 30%);
+
+			&:active,
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				color: hsl(209 30% 21%);
+			}
+
+			& > .icon > use {
+				transform-origin: center;
+				transform: rotate(45deg);
+			}
+		}
+
+		&--remove {
+			order: -1;
+
+			color: hsl(0 100% 40%);
+
+			&:active,
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				color: hsl(0 100% 30%);
+			}
+		}
+
+		&--order {
+			order: 1;
+
+			color: hsl(210 30% 21%);
+
+			cursor: move;
+			cursor: grab;
+
+			&:active {
+				cursor: grabbing;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				color: hsl(210 30% 30%);
+			}
+		}
+
+		& > .icon {
+			pointer-events: none;
+			fill: currentColor;
+		}
+
+	}
+}

@@ -1,0 +1,117 @@
+.catalog {
+
+    $this: &;
+
+    display: grid;
+    gap: 2rem;
+    position: relative;
+
+    &__container {
+        display: grid;
+        gap: 1rem;
+
+        transition: .25s ease-in-out;
+        transition-property: grid-template-columns;
+
+        // вид списком по умолчанию и с модификатором "список"
+        &,
+        #{$this}--list & {
+            // по умолчанию карточки в каталоги в виде списка
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // кнопка переключения передач =)
+    &__switcher {
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        gap: .5rem;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        border-radius: 0;
+
+        background-color: unset;
+
+        color: #253544;
+        font-size: 1rem;
+        font-weight: 600;
+
+        // ПК >= 960px
+        @media (min-width: 960px) {
+            display: flex;
+        }
+
+        &:not(:disabled) {
+            // мобилы
+            @media (hover: none) {
+            }
+            // ПК
+            @media (hover: hover) {
+                cursor: pointer;
+
+                // в будущем может заработать =)
+                // @extend %outline-focus;
+                // &:focus-visible {
+                //     @extend %outline-focus-visible;
+                // }
+
+            }
+        }
+
+        // svg иконки
+        & .icon {
+            width: 28px;
+            height: 28px;
+            aspect-ratio: 1;
+            fill: #F1BA2C;
+        }
+
+        // по умолчанию отображется список
+        &--title-list,
+        &--icon-list {
+            display: none;
+        }
+    }
+
+    // модификатор "сетка" работает только на больших экранах
+    &--grid {
+
+        & #{$this}__container {
+
+            // ПК >= 960px
+            @media (min-width: 960px) {
+                // на больших дисплеях карточки выстраиваются в 2 строки с минимальной шириной 224px
+                // кол-во столбцов в сетке - 2
+                grid-template-columns: repeat(2, minmax(14rem, 1fr));
+            }
+        }
+
+        & #{$this}__switcher {
+            &--title-grid,
+            &--icon-grid {
+                display: none;
+            }
+            &--title-list,
+            &--icon-list {
+                display: initial;
+            }
+        }
+    }
+
+    // модификатор "список" работает по умолчанию
+    &--list {
+
+        & #{$this}__switcher {
+            &--title-list,
+            &--icon-list {
+                display: none;
+            }
+        }
+
+    }
+
+}

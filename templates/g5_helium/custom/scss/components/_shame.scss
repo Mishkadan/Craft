@@ -1,0 +1,77 @@
+// ! внимание, это файл позора, сюда попадают только плохие мальчики, либо код, который стыдно куда-либо еще вставлять
+
+// * добавить !important для перебивки предыдущих стилей
+// * используется так - #{if($important, ' !important', '')}
+$important: true;
+
+// * попытка перебить древние кривые стили для калькуляторов от gallerybox.js
+// * слои от этой "чудо" библиотеки лезут куда не надо и двигают что не положено
+// * судя по миллиону !important в custom.scss от Михаила, он явно пытался побороть это чудовище
+#gmbOverlay, #gmbCenter {
+	position: fixed#{if($important, ' !important', '')};
+	inset: 0 #{if($important, ' !important', '')};
+}
+#gmbOverlay {
+    display: none#{if($important, ' !important', '')};
+}
+#gmbCenter {
+    isolation: isolate#{if($important, ' !important', '')};
+    transform: none#{if($important, ' !important', '')};
+    z-index: 999999#{if($important, ' !important', '')};
+}
+#gmbWhrapper {
+    z-index: 1;
+    width: 100vw#{if($important, ' !important', '')};
+    height: 100vh#{if($important, ' !important', '')};
+    overflow-x: hidden#{if($important, ' !important', '')};
+    overflow-y: auto#{if($important, ' !important', '')};
+}
+#gmbBottom {
+    width: 100vw#{if($important, ' !important', '')};
+    overflow-x: auto#{if($important, ' !important', '')};
+    overflow-y: hidden#{if($important, ' !important', '')};
+}
+
+// * Fix скролла в слое редактирования описания файла
+.mooupload_listview li div.filedescription {
+	overflow-y: scroll#{if($important, ' !important', '')};
+    overflow-x: hidden#{if($important, ' !important', '')};
+}
+
+// * Fix article - различные элементы с абсолютным позиционированием вылезают за край экрана на разных экранах
+article {
+	position: relative#{if($important, ' !important', '')};
+}
+
+// * Fix video - видео блок тоже вылезает за границы экрана, т.к. ширина и высота выставляется через js, но только при обновлении страницы. повернул телефон - видео кривое, либо мелкое, либо улезло на 50% за край экрана
+.video-block {
+	position: relative#{if($important, ' !important', '')};
+}
+.jwplayer {
+	width: 100%#{if($important, ' !important', '')};
+	height: auto#{if($important, ' !important', '')};
+	aspect-ratio: 16 / 9#{if($important, ' !important', '')};
+
+	// * видео в обычном режиме
+	// & video {
+	// 	object-fit: cover#{if($important, ' !important', '')};
+	// }
+	// * видео в полноэкранном режиме
+	// &.jwfullscreen video {
+	// 	object-fit: contain#{if($important, ' !important', '')};
+	// }
+}
+// Добавочка позора
+#addvine {
+  .filesize {
+    display: none;
+  }
+    #addlogo {
+        .filename.filenameedit, span.small {
+            display: none;
+        }
+      ul {
+        padding-bottom: 15px !important;
+      }
+    }
+}

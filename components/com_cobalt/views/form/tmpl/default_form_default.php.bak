@@ -1,0 +1,125 @@
+<?php
+/**
+ * Cobalt by MintJoomla
+ * a component for Joomla! 1.7 - 2.5 CMS (http://www.joomla.org)
+ * Author Website: http://www.mintjoomla.com/
+ * @copyright Copyright (C) 2012 MintJoomla (http://www.mintjoomla.com). All rights reserved.
+ * @license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ */
+defined('_JEXEC') or die('Restricted access');
+$started = false;
+$params = $this->tmpl_params;
+if($params->get('tmpl_params.form_grouping_type', 0))
+{
+	$started = true;
+}
+
+
+?>
+
+
+
+ 
+
+
+
+	
+	
+	<?php echo $this->fields[1]->label.': '.$this->fields[1]->result; $field->id; ?>					
+	<?php echo $this->fields[20]->label.': '.$this->fields[20]->result; $field->id; ?>
+ <?php echo $this->fields[21]->label.': '.$this->fields[21]->result; $field->id; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	<?php if(in_array($params->get('tmpl_params.form_grouping_type', 0), array(1,4))):?>
+		jQuery('#tabs-list a:first').tab('show');
+	<?php elseif(in_array($params->get('tmpl_params.form_grouping_type', 0), array(2))):?>
+		jQuery('#tab-main').collapse('show');
+	<?php endif;?>
+</script>
+
+
+
+
+
+
+<?php
+function group_start($data, $label, $name)
+{
+	static $start = false;
+	switch ($data->tmpl_params->get('tmpl_params.form_grouping_type', 0))
+	{
+		//tab
+		case 4:
+		case 1:
+			if(!$start)
+			{
+				echo '<div class="tab-content" id="tabs-box">';
+				$start = TRUE;
+			}
+			echo '<div class="tab-pane" id="'.$name.'">';
+			break;
+		//slider
+		case 2:
+			if(!$start)
+			{
+				echo '<div class="accordion" id="accordion2">';
+				$start = TRUE;
+			}
+			echo '<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#'.$name.'">
+					     '.$label.'
+					</a>
+				</div>
+				<div id="'.$name.'" class="accordion-body collapse">
+					<div class="accordion-inner">';
+			break;
+		// fieldset
+		case 3:
+            if($name != 'tab-main') {
+                echo "<legend>{$label}</legend>";
+            }
+		break;
+	}
+}
+
+function group_end($data)
+{
+	switch ($data->tmpl_params->get('tmpl_params.form_grouping_type', 0))
+	{
+		case 4:
+		case 1:
+			echo '</div>';
+		break;
+		case 2:
+			echo '</div></div></div>';
+		break;
+	}
+}
+
+function total_end($data)
+{
+	switch ($data->tmpl_params->get('tmpl_params.form_grouping_type', 0))
+	{
+		//tab
+		case 4:
+		case 1:
+			echo '</div></div>';
+		break;
+		case 2:
+			echo '</div>';
+		break;
+	}
+}

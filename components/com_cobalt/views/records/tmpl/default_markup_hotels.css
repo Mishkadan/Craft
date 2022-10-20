@@ -1,0 +1,73 @@
+.alpha-index {
+	text-align: center;
+}
+
+.alpha-index .label-warning {
+	cursor: pointer;
+}
+
+.alpha-index .alpha-set {
+	margin: 5px 0;
+}
+.filter-worns .alert {
+	white-space: nowrap;
+	margin-right: 10px;
+	text-align: left;
+}
+
+.filter-worns .alert div {
+	font-weight: bold;
+	font-size: 105%;
+	margin-top: 1px;
+}
+
+.control-box .badge {
+	margin-left: 5px;
+}
+
+.avatar {
+	text-align: center;
+	vertical-align: middle;
+}
+#cnav .navbar-inner {
+	padding-left: 0px;
+    padding-right: 5px;
+}
+.pagination .pagination-list li {
+	float: left;
+	padding: 0px !important;
+}
+.tab-content {
+    overflow: visible;
+}
+
+/***НОВЫЙ СТИЛЬ В ШАБЛОНАХ **
+@media (max-width:979px) {
+.form-inline.navbar-form.pull-right.search-form {
+    width: 100%;
+}
+.searchform1 {
+    
+}
+.searchform1 input.search-input {
+width: 100%;
+    height: 41px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+	font-size: 16px;
+    text-align: center;
+}
+svg.searchloop {
+    position: relative;
+    left: 20px;
+    top: -29px;
+}
+.tabbable.tabs-left {
+    display: flex;
+    flex-direction: column;
+}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus {
+    background: whitesmoke;
+}
+}*/

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="attribs">
+	 <fieldset name="joompush" label="PLG_CONTENT_JPCONTENT_SLIDER_LABEL">
+		<field 
+		name="jp_send_notification" 
+		type="radio" 
+		default="0" 
+		label="Send Notification" 
+		description="" 
+		class="btn-group">
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+		</field>
+		
+		<field
+            name="jp_subscribers_ids"
+            type="sql"
+            class="inputbox"
+            default=""
+            showon="jp_send_notification:1"
+            label="Select Subscriber Group"
+            description="Use Ctrl to select multiple groups."
+            required=""
+            multiple="multiple"
+            sql_select="e.*" 
+			sql_from="#__joompush_subscriber_groups AS e WHERE e.state = 1" 
+			sql_group="title" 
+			sql_order="e.id ASC" 
+			key_field="id"
+			value_field="title" 
+			/>
+
+	 </fieldset>
+  </fields>
+</form>

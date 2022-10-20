@@ -1,0 +1,71 @@
+.chat-menu {
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+    max-width: 500px;
+    background: #F6F8FA;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    z-index: 99;
+    border-radius: 20px;
+    top: 120px;
+    left: 15px;
+    right: 15px;
+    box-shadow: 0px 8px 24px rgba(37, 53, 68, 0.5);
+
+        a {
+            color: #253544;
+        }
+
+          li {
+              display: flex;
+              align-items: center;
+              font-weight: 600;
+              overflow: visible;
+              padding: 15px 0 20px 35px;
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: 0.005em;
+              color: #253544;
+              min-height: 35px;
+
+              img {
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 50%;
+                  margin-right: 20px;
+              }
+
+             label {
+               font-weight: inherit;
+               font-size: 16px;
+               color: inherit;
+               margin: 0;
+            }
+
+            svg.svg-inline--fa.fa-users.fa-w-20.nnn1,
+            svg.svg-inline--fa.fa-user-circle.fa-w-16.nnn1,
+            svg.svg-inline--fa.fa-image.fa-w-16.nnn1
+            {
+                      color: #f1ba2c;
+                      position: absolute;
+                      left: 18px;
+                      width: 30px;
+                      height: 30px;
+              }
+          }
+
+}
+.joms-page {
+
+  &.joms-js-page-chat-loading {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+
+  }
+
+}

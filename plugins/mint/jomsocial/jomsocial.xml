@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="mint" method="upgrade">
+	<name>Cobalt - Plugin - JomSocial</name>
+    <author>MintJoomla</author>
+    <creationDate>February 17 2009</creationDate>
+    <copyright>MintJoomla</copyright>
+    <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+    <authorEmail>support@mintjoomla.com</authorEmail>
+    <authorUrl>http://www.mintjoomla.com</authorUrl>
+	<version>8.64</version>
+	<description>
+	<![CDATA[ This is plugin integrates Cobalt and JomSocial activity and karma ]]>
+	</description>
+	<files>
+		<filename plugin="jomsocial">jomsocial.php</filename>
+	</files>
+</extension>

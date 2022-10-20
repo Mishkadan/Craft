@@ -1,0 +1,131 @@
+.button {
+
+	// * добавить !important для перебивки предыдущих стилей
+	// * используется так - #{if($important, ' !important', '')}
+	$important: true;
+
+	// * параметры
+	// * базовые для всех кнопок
+	--button-gap: .5em;
+	--button-padding: .5em 1em;
+	--button-border-radius: 1em;
+	--button-border-width: .125rem;
+	--button-font-size: 1rem;
+
+	// * цветовая цхема - по уполчанию
+	--button-default-color: hsl(0 0% 100%);
+	--button-default-background-color: hsl(23 63% 14%);
+	--button-default-hover-background-color: hsl(23 63% 20%);
+
+	// * цветовая цхема - вторичная
+	--button-secondary-color: hsl(0 0% 100%);
+	--button-secondary-background-color: hsl(209 30% 21%);
+	--button-secondary-hover-background-color: hsl(209 30% 27%);
+
+	// * цветовая цхема - чистая
+	--button-clear-color: hsl(23 63% 14%);
+	--button-clear-background-color: hsl(0 0% 100%);
+	--button-clear-border-color: hsl(23 63% 14%);
+	--button-clear-hover-color: hsl(209 30% 21%);
+	--button-clear-hover-border-color: hsl(209 30% 21%);
+
+	// * цветовая цхема - заблокированная кнопка
+	--button-disabled-color: hsl(0 0% 100%);
+	--button-disabled-background-color: hsl(0 0% 77%);
+
+	$this: &;
+
+	display: inline-flex#{if($important, ' !important', '')};
+	justify-content: center#{if($important, ' !important', '')};
+	align-items: center#{if($important, ' !important', '')};
+	gap: var(--button-gap)#{if($important, ' !important', '')};
+	padding: var(--button-padding)#{if($important, ' !important', '')};
+
+	border-radius: var(--button-border-radius)#{if($important, ' !important', '')};
+	border: var(--button-border-width) solid transparent#{if($important, ' !important', '')};
+
+	font-size: var(--button-font-size)#{if($important, ' !important', '')};
+	font-weight: 600#{if($important, ' !important', '')};
+	line-height: 1.5#{if($important, ' !important', '')};
+	text-transform: none#{if($important, ' !important', '')};
+	letter-spacing: inherit#{if($important, ' !important', '')};
+	white-space: normal#{if($important, ' !important', '')};
+
+	outline: var(--button-border-width) solid transparent#{if($important, ' !important', '')};
+	outline-offset: calc(-2*var(--button-border-width))#{if($important, ' !important', '')};
+
+	transition: var(--transition, .25s ease-in-out)#{if($important, ' !important', '')};
+	transition-property: color, background-color, border-color, outline-color#{if($important, ' !important', '')};
+
+    box-shadow: none#{if($important, ' !important', '')};
+
+	& > * {
+		pointer-events: none#{if($important, ' !important', '')};
+	}
+
+	&:not(:disabled) {
+		cursor: pointer#{if($important, ' !important', '')};
+
+		&:focus-visible {
+			outline-color: currentColor#{if($important, ' !important', '')};
+		}
+	}
+
+	:disabled {
+		color: var(--button-disabled-color)#{if($important, ' !important', '')};
+		background-color: var(--button-disabled-background-color)#{if($important, ' !important', '')};
+
+		cursor: not-allowed#{if($important, ' !important', '')};
+		pointer-events: none#{if($important, ' !important', '')};
+	}
+
+	// * пк
+	@media (min-width: 980px) {
+		width: fit-content#{if($important, ' !important', '')};
+	}
+	// * мобильный
+	@media (max-width: 979px) {
+		width: 100%#{if($important, ' !important', '')};
+	}
+
+	// * стиль без модивикаторов, по умолчанию
+	&:not(:disabled):not([class*='--secondary']):not([class*='--clear']) {
+		color: var(--button-default-color)#{if($important, ' !important', '')};
+		background-color: var(--button-default-background-color)#{if($important, ' !important', '')};
+
+		&:active,
+		&:hover,
+		&:focus-visible {
+			background-color: var(--button-default-hover-background-color)#{if($important, ' !important', '')};
+		}
+	}
+
+	&--secondary {
+		color: var(--button-secondary-color)#{if($important, ' !important', '')};
+		background-color: var(--button-secondary-background-color)#{if($important, ' !important', '')};
+
+		&:active,
+		&:hover,
+		&:focus-visible {
+			background-color: var(--button-secondary-hover-background-color)#{if($important, ' !important', '')};
+		}
+	}
+
+	&--clear {
+		color: var(--button-clear-color)#{if($important, ' !important', '')};
+		background-color: var(--button-clear-background-color)#{if($important, ' !important', '')};
+		border-color: var(--button-clear-border-color)#{if($important, ' !important', '')};
+
+		&:active,
+		&:hover,
+		&:focus-visible {
+			color: var(--button-clear-hover-color)#{if($important, ' !important', '')};
+			background-color: var(--button-clear-background-color)#{if($important, ' !important', '')};
+			border-color: var(--button-clear-hover-border-color)#{if($important, ' !important', '')};
+		}
+		&:focus-visible {
+			outline-offset: calc(-3*var(--button-border-width))#{if($important, ' !important', '')};
+		}
+	}
+
+}

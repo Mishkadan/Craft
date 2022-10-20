@@ -1,0 +1,59 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Vladivostok",
+               "short_name" : "Vladivostok",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Vladivostok Urban Okrug",
+               "short_name" : "Vladivostok Urban Okrug",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Primorsky Krai",
+               "short_name" : "Primorsky Krai",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Russia",
+               "short_name" : "RU",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Vladivostok, Primorsky Krai, Russia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.276021,
+                  "lng" : 132.065634
+               },
+               "southwest" : {
+                  "lat" : 43.057153,
+                  "lng" : 131.841282
+               }
+            },
+            "location" : {
+               "lat" : 43.1332484,
+               "lng" : 131.9112975
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.276021,
+                  "lng" : 132.065634
+               },
+               "southwest" : {
+                  "lat" : 43.057153,
+                  "lng" : 131.841282
+               }
+            }
+         },
+         "place_id" : "ChIJhdRJUrqcs18RNX6W3dQEZxg",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

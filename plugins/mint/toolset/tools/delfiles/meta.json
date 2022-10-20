@@ -1,0 +1,5 @@
+{
+	"label": "Clean Deleted Files",
+	"description": "<b>Attention!!! Always make backup of uploads folder and Cobalt BD before using this tool. You will not be able to restore files through Audit log after this tool is applied.</b> When users delete files they are not removed from disk giving me opportunity to restore.",
+	"height": "300"
+}

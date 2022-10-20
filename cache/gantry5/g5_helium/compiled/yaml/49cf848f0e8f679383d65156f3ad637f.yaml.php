@@ -1,0 +1,72 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => 'C:/OpenServer/domains/cr.loc/templates/g5_helium/custom/config/12/index.yaml',
+    'modified' => 1662627756,
+    'data' => [
+        'name' => '12',
+        'timestamp' => 1662627756,
+        'version' => 7,
+        'preset' => [
+            'image' => 'gantry-admin://images/layouts/default.png',
+            'name' => 'default',
+            'timestamp' => 1649755126
+        ],
+        'positions' => [
+            'Kabinet' => 'Module Position',
+            'module-position1' => 'Module Position',
+            'svg' => 'SVG',
+            'Slider' => 'Module Position',
+            'Cobalt-categories' => 'Module Position',
+            'aside' => 'Aside',
+            'sidebar' => 'Sidebar',
+            'bottombar' => 'Module Position',
+            'FOR-Notifications' => 'Module Position'
+        ],
+        'sections' => [
+            'navigation' => 'Navigation',
+            'intro' => 'Intro',
+            'features' => 'Features',
+            'utility' => 'Utility',
+            'above' => 'Above',
+            'testimonials' => 'Testimonials',
+            'expanded' => 'Expanded',
+            'header' => 'Header',
+            'aside' => 'Aside',
+            'sidebar' => 'Sidebar',
+            'mainbar' => 'Mainbar',
+            'footer' => 'Footer',
+            'offcanvas' => 'Offcanvas'
+        ],
+        'particles' => [
+            'module' => [
+                'position-module-7565' => 'Module Instance',
+                'position-module-9086' => 'Поиск'
+            ],
+            'logo' => [
+                'logo-9608' => 'Logo / Image',
+                'logo-5665' => 'Logo / Image'
+            ],
+            'position' => [
+                'position-position-3779' => 'Module Position',
+                'position-position-4510' => 'Module Position',
+                'position-position-3589' => 'SVG',
+                'position-position-8621' => 'Module Position',
+                'position-position-9266' => 'Module Position',
+                'position-position-4734' => 'Aside',
+                'position-position-3949' => 'Sidebar',
+                'position-position-1310' => 'Module Position',
+                'position-position-5139' => 'Module Position'
+            ],
+            'content' => [
+                'system-content-1587' => 'Page Content'
+            ],
+            'copyright' => [
+                'copyright-1736' => 'Copyright'
+            ]
+        ],
+        'inherit' => [
+            
+        ]
+    ]
+];

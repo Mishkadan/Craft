@@ -1,0 +1,13 @@
+head_bottom: ' <script src="https://api-maps.yandex.ru/2.1/?apikey=a4691c36-e9ad-4a81-96ed-a185938751a2&lang=ru_RU" type="text/javascript ">  </script>'
+atoms:
+  -
+    id: assets-1718
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: 'gantry-assets://custom/scss/header-js.css', inline: '', extra: {  }, priority: '0', name: header-js }
+      javascript:
+        - { location: '', inline: "jQuery( document ).ready(function() {\n   jQuery('#nav-icon3').click(function(){\n       jQuery(this).toggleClass('open');\n    });\n});", in_footer: '0', extra: {  }, priority: '0', name: 'бургер меню' }
+        - { location: 'gantry-assets://js/custom.js', inline: '', in_footer: '0', extra: {  }, priority: '0', name: custom }

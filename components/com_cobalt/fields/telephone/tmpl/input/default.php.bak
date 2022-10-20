@@ -1,0 +1,40 @@
+<?php
+/**
+ * Cobalt by MintJoomla
+ * a component for Joomla! 1.7 - 2.5 CMS (http://www.joomla.org)
+ * Author Website: http://www.mintjoomla.com/
+ * @copyright Copyright (C) 2012 MintJoomla (http://www.mintjoomla.com). All rights reserved.
+ * @license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ */
+defined('_JEXEC') or die();
+
+$params = $this->params;
+$class = ' class="' . $this->params->get('core.field_class', 'inputbox') . ($this->required ? ' required' : NULL) .'"';
+$required = $this->required ? 'required="true" ' : NULL;
+
+$value = $this->value ? $this->value : null;
+?>
+
+<div class="input text">
+	
+			
+        	
+        	<div class="tells">
+			<div>
+			<small class="telmini" id="field_<?php echo $this->id;?>_cntname"><?php echo JText::_('T_TEL');?>&nbsp;1</small>      	    
+        	
+        	  	<input class="input-small" id="field_<?php echo $this->id;?>_tel" type="text" name="jform[fields][<?php echo $this->id;?>][tel]"  onkeyup="Cobalt.formatInt(this)"
+        	   		size="7" maxlength="7" value="<?php echo (isset($value['tel']) ? $value['tel'] : '');?>" />
+        	   	</div>
+			
+			<div>
+			<small class="telmini" id="field_<?php echo $this->id;?>_cntname">Телефон 2 (Не обязательно)</small><br>
+			  	<input class="input-small" id="phone1" type="text" name="jform[fields][<?php echo $this->id;?>][tel]"  onkeyup="Cobalt.formatInt(this)"
+        	   		size="20" maxlength="20" value="<?php echo (isset($value['tel']) ? $value['tel'] : '');?>" />
+           	    </div>
+        	</div>
+			
+			
+		
+		
+</div>

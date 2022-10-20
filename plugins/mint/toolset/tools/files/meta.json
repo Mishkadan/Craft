@@ -1,0 +1,5 @@
+{
+	"label": "Clean Files",
+	"description": "<b>Attention!!! Always make backup of uploads folder before using this tool.</b>Sometimes users upload files but not finalize upload. If you want to delete all unused files to free some space.",
+	"height": "300"
+}

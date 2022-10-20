@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="community" method="upgrade">
+	<name>Cobalt [11] - Plugin - Integration - JoomSocial</name>
+	<author>MintJoomla</author>
+	<creationDate>October 15 2012</creationDate>
+	<copyright>MintJoomla</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>http://www.mintjoomla.com</authorUrl>
+	<version>8.64</version>
+	<description>
+		<![CDATA[ Cobalt 8 ]]>
+	</description>
+	<isapplication>true</isapplication>
+	<files>
+		<file plugin="cobalt11">cobalt11.php</file>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/libraries/mint/forms/fields/">
+				<field name="section_id" type="meresourcessection" required="true" select="1" type_elem_name="types" default="" label="Select section" description="Select the Home section which will for this module."/>
+				<field name="coreapp" type="radio" class="btn-group" default="0" label="Core Application" description="Causes this application to not appearing the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+					<option value="1">Use Global</option>
+					<option value="0">No</option>
+				</field>
+				<field name="position" type="list" default="content" label="Position" description="Default position if you select this as core apps">
+					<option value="content">Main content</option>
+					<option value="sidebar-top">Sidebar top</option>
+					<option value="sidebar-bottom">Sidebar bottom</option>
+				</field>
+				<field name="charlimit" type="text" default="0" label="Limit" description="Character limits in each post. (Set to 0 if you do want to limit)"/>
+				<field type="filelist" name="view_tmpl" filter="php$" hide_none="1" hide_default="1" directory="/plugins/community/cobalt11/tmpl" label="App template" default="default.php" />
+			</fieldset>
+
+			<fieldset label="Profile" name="profile" addfieldpath="/libraries/mint/forms/fields/">
+				<field name="types" type="mertype" required="true" default="" multi="1" label="Only following types"/>
+				<field name="orderby" type="list" default="r.ctime DESC" label="Primary Order" description="">
+					<option value="r.ctime ASC">Oldest first</option>
+					<option value="r.ctime DESC">Most recent first</option>
+					<option value="r.mtime DESC">Last Modified First</option>
+					<option value="r.mtime ASC">First Modified First</option>
+					<option value="r.title ASC">Title Alphabetical</option>
+					<option value="r.title DESC">Title Reverse-Alphabetical</option>
+					<option value="name ASC">Author Alphabetical</option>
+					<option value="name DESC">Author Reverse-Alphabetical</option>
+					<option value="r.hits DESC">Most Hits</option>
+					<option value="r.hits ASC">Least Hits</option>
+					<option value="r.votes_result DESC">Most Rated</option>
+					<option value="r.votes_result ASC">Least Rated</option>
+					<option value="r.comments DESC">Most Commented</option>
+					<option value="r.comments ASC">Least Commented</option>
+					<option value="r.favorite_num DESC">Most Favorited</option>
+					<option value="r.favorite_num ASC">Least Favorited</option>
+					<option value="RAND() ">Random</option>
+				</field>
+				<field name="list_type" type="list" multiple="true" default="created" label="What to show?" description="">
+					<option value="created">User created</option>
+					<option value="favorited">User favorites</option>
+					<option value="rated">User rated</option>
+					<option value="commented">User commented</option>
+					<option value="visited">Usre visited</option>
+					<option value="follow">User follows</option>
+				</field>
+
+				<field label="Template overwrite" name="tmpl" type="mersubtmpls" default="" exclude="calendar" description="Template to display list of articles. The changes takes effect only after relogin or session cleanup" tmpltype="itemlist">
+					<option value="">- Use section default -</option>
+				</field>
+				<field label="Limit" name="limit" type="text" size="3" default="5"/>
+
+				<field name="vw_created" type="text" default="Created" label="Created tab title"/>
+				<field name="vw_favorited" type="text" default="Bookmarked" label="Bookmarked tab title"/>
+				<field name="vw_rated" type="text" default="Rated" label="Rated tab title"/>
+				<field name="vw_commented" type="text" default="Commented" label="Commented tab title"/>
+				<field name="vw_visited" type="text" default="Visited" label="Visited tab title"/>
+				<field name="vw_follow" type="text" default="Follow" label="Follow tab title"/>
+
+				<field name="btn_section_enable" type="radio" class="btn-group" default="1" label="Show button to section homepage">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field name="btn_section" type="text" default="Section home" label="Section homepage button text"/>
+
+				<field name="btn_user_enable" type="radio" class="btn-group" default="1" label="Show button to user homepage">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="btn_user" type="text" default="All user atricles" label="User homepage button text"/>
+
+			</fieldset>
+			<fieldset label="Toolbar" name="toolbar" addfieldpath="/administrator/components/com_cobalt/models/fields/">
+				<field name="toolbar" type="radio" class="btn-group" default="1" label="Add Toolbar">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="toolbar_main_lbl" type="text" default="Cobalt" label="Main toolbar label"/>
+
+				<field name="tshow_new" type="radio" class="btn-group" default="1" label="Show submenu add new">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="type_id" type="mertype" default="" multi="1" label="Add new element for what types?"/>
+				<field name="tshow_created" type="radio" class="btn-group" default="1" label="Show submenu created">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tshow_favorited" type="radio" class="btn-group" default="1" label="Show submenu bookmarks">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tshow_rated" type="radio" class="btn-group" default="1" label="Show submenu rated">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tshow_commented" type="radio" class="btn-group" default="1" label="Show submenu commented">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tshow_visited" type="radio" class="btn-group" default="1" label="Show submenu visited">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tshow_follow" type="radio" class="btn-group" default="1" label="Show submenu follow">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field name="tlbl_new" type="text" default="Add new %s" label="Add new toolbar label"/>
+				<field name="tlbl_created" type="text" default="Created" label="Created toolbar label"/>
+				<field name="tlbl_favorited" type="text" default="Bookmarked" label="Bookmarked toolbar label"/>
+				<field name="tlbl_rated" type="text" default="Rated" label="Rated toolbar label"/>
+				<field name="tlbl_commented" type="text" default="Commented" label="Commented toolbar label"/>
+				<field name="tlbl_visited" type="text" default="Visited" label="Visited toolbar label"/>
+				<field name="tlbl_follow" type="text" default="Follow" label="Follow toolbar label"/>
+
+				<field name="icon_new" type="fieldicon" default="plus.png" label="Created toolbar icon"/>
+				<field name="icon_created" type="fieldicon" default="plus.png" label="Created toolbar icon"/>
+				<field name="icon_favorited" type="fieldicon" default="bookmark.png" label="Bookmarked toolbar icon"/>
+				<field name="icon_rated" type="fieldicon" default="star.png" label="Rated toolbar icon"/>
+				<field name="icon_commented" type="fieldicon" default="balloon-left.png" label="Commented toolbar icon"/>
+				<field name="icon_visited" type="fieldicon" default="hand-point-090.png" label="Visited toolbar icon"/>
+				<field name="icon_follow" type="fieldicon" default="follow1.png" label="Follow toolbar icon"/>
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

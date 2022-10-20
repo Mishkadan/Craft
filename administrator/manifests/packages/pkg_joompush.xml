@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>Joompush Package</name>
+	<author>Weppsol</author>
+	<authorUrl>https://weppsol.com/</authorUrl>
+	<copyright>Copyright (c) 2017 Weppsol Technologies. All rights reserved</copyright>
+	<license>GNU GENERAL PUBLIC LICENSE V2 OR LATER.</license>
+	<creationDate>1st Jan 2017</creationDate>
+	<packagename>joompush</packagename>
+	<version>1.3.11</version>
+	<packager>Weppsol Team</packager>
+	<description></description>
+	<scriptfile>script.pkg_joompush.php</scriptfile>
+	<files folder="packages">
+		<file type="component" id="com_joompush">com_joompush.zip</file>
+	</files>
+	<updateservers>
+        <server type="extension" priority="1" name="JoomPush"><![CDATA[https://weppsol.com/index.php?option=com_rdsubs&view=updater&format=xml&cat=5&element=joompush&type=package]]></server>
+    </updateservers>
+</extension>

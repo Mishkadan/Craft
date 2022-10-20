@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="user" method="upgrade">
+	<name>User - Emerald Subscriptions</name>
+	<author>MintJoomla</author>
+	<creationDate>November 2011</creationDate>
+	<copyright><![CDATA[ (c) 2012 MintJoomla]]></copyright>
+	<license>GPL GNU</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>http://www.mintjoomla.com</authorUrl>
+	<version>10.7</version>
+	<description>EMR_USER_DESCR</description>
+	<files>
+		<filename plugin="emerald">emerald.php</filename>
+		<folder>profiles</folder>
+		<folder>fields</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_user_emerald.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_user_emerald.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/components/com_emerald/models/fields">
+				<field name="register" type="radio" class="btn-group" default="0" label="PLG_USER_BUBREG_LABEL">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="require" type="radio" class="btn-group" label="PLG_USER_BUBREQ_LABEL">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="skip" type="usergrouplist" multiple="true" label="PLG_USER_BUBSKIP_LABEL" />
+				<field name="groups" type="groupslist" multiple="true" label="PLG_USER_BUBPLANS_LABEL" />
+				<field name="plans" type="planslist" multiple="true" label="PLG_USER_BUBGROUPS_LABEL" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

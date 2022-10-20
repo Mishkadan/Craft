@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+  <name>plg_content_jpcontent</name>
+  <author>Rupali</author>
+  <creationDate>Dec 2018</creationDate>
+  <copyright>(C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <authorEmail>support@weppsol.com</authorEmail>
+  <authorUrl>contact@weppsol.com</authorUrl>
+  <version>1.0.1</version>
+  <description>PLG_CONTENT_JPCONTENT_XML_DESCRIPTION</description>
+  <files>
+	 <folder>jpcontent</folder>
+	 <filename plugin="jpcontent">jpcontent.php</filename>
+	 <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+	<language tag="en-GB">en-GB/en-GB.plg_content_jpcontent.ini</language>
+	<language tag="en-GB">en-GB/en-GB.plg_content_jpcontent.sys.ini</language>
+  </languages>	
+  <config>
+	 <fields name="params">
+		<fieldset name="basic">
+		   <field
+			  name="jpcontentclass_sfx"
+			  type="text"
+			  label="PLG_CONTENT_JPCONTENT_ITEM_FIELD_JPCONTENT_CLASS_LABEL"
+			  description="PLG_CONTENT_JPCONTENT_ITEM_FIELD_JPCONTENT_CLASS_DESC"
+		   />
+		</fieldset>
+	 </fields>
+  </config>
+</extension>

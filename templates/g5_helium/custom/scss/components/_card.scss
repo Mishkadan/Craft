@@ -1,0 +1,122 @@
+.card {
+
+    // !important - от этого зла надо избавиться, разобрав макаронную фабрику
+
+    $this: &;
+
+    // @extend grid-full-center;
+
+    position: relative;
+    isolation: isolate;
+
+    min-width: 100%;
+    height: auto;
+    max-height: 16.25rem; // 260px
+    display: grid;
+    place-items: center;
+
+    border-radius: 1.25rem; // 20px
+
+    background-color: hsl(209deg 30% 21%) !important;
+
+    // outline как внутренняя рамка с offset отступом прекрасно себя показывает визуально, но не с mix-blend-mode у картинки, надо подумать над выделением карточки при фокусе либо другим способом, либо немного переделать какой слой с чем миксуется в плане наложения
+
+    outline: .125rem solid transparent !important;
+    outline-offset: -.5rem !important;
+
+    overflow: hidden;
+
+    & > * {
+        pointer-events: none;
+    }
+
+    // устройства с тач скрином
+    @media (hover: none) {
+    }
+
+    // устройства с курсором
+    @media (hover: hover) {
+        transition: .25s ease-in-out !important;
+        transition-property: background-color, outline-color !important;
+
+        &:active,
+        &:hover,
+        &:focus-visible {
+            background-color: transparent !important;
+        }
+
+        &:focus-visible {
+            outline-color: #fff !important;
+        }
+
+    }
+
+    // мобильник
+    @media (max-width: 979px) {
+    }
+
+    // ПК
+    @media (min-width: 980px) {
+    }
+
+    &__picture {
+
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+
+        mix-blend-mode: exclusion;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+        & img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__title {
+        margin: 1rem;
+
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 2.5;
+        text-transform: uppercase;
+        text-shadow: 0 0 1em black, 0 0 .5em black;
+
+        &--cover {
+            position: absolute;
+            inset: auto 0;
+
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            overflow: hidden;
+
+        }
+    }
+
+    &--full {
+
+        [class*="--grid"] & {
+            // ПК >= 960px
+            @media (min-width: 960px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+}
+
+// плейсхолдеры не пашут, возможно из-за php библиотеки, компилирующей sass в шаблоне
+// %grid-full-center {
+//     display: grid;
+//     place-items: center;
+// }

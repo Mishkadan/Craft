@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" client="site" type="language" method="upgrade">
+	<name>Emerald Russian [Frontend]</name>
+    <tag>ru-RU</tag>
+    <version>10.75</version>
+    <creationDate>2012-07-08</creationDate>
+    <author>MintJoomla</author>
+    <authorEmail>info@mintjoomla.com</authorEmail>
+    <authorUrl>www.mintjoomla.com</authorUrl>
+    <copyright>Copyright (C) 2005 - 2012 MintJoomla.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>Russian Language for Emerald 9</description>
+	<files>
+		<filename file="meta">install.xml</filename>
+		<filename>ru-RU.com_emerald.ini</filename>
+
+        <filename>ru-RU.com_emerald_action_acymail.ini</filename>
+        <filename>ru-RU.com_emerald_action_alert.ini</filename>
+        <filename>ru-RU.com_emerald_action_amigos.ini</filename>
+        <filename>ru-RU.com_emerald_action_bmm.ini</filename>
+        <filename>ru-RU.com_emerald_action_easydiscussbadge.ini</filename>
+        <filename>ru-RU.com_emerald_action_easysocial.ini</filename>
+        <filename>ru-RU.com_emerald_action_getresponse.ini</filename>
+        <filename>ru-RU.com_emerald_action_google.ini</filename>
+        <filename>ru-RU.com_emerald_action_group.ini</filename>
+        <filename>ru-RU.com_emerald_action_hikashop.ini</filename>
+        <filename>ru-RU.com_emerald_action_hook.ini</filename>
+        <filename>ru-RU.com_emerald_action_idev.ini</filename>
+        <filename>ru-RU.com_emerald_action_js.ini</filename>
+        <filename>ru-RU.com_emerald_action_jspt.ini</filename>
+        <filename>ru-RU.com_emerald_action_k2group.ini</filename>
+        <filename>ru-RU.com_emerald_action_kunena.ini</filename>
+        <filename>ru-RU.com_emerald_action_mailchimp.ini</filename>
+        <filename>ru-RU.com_emerald_action_sm.ini</filename>
+        <filename>ru-RU.com_emerald_action_sql.ini</filename>
+
+        <filename>ru-RU.com_emerald_field_note.ini</filename>
+        <filename>ru-RU.com_emerald_field_upsell.ini</filename>
+        <filename>ru-RU.com_emerald_field_crosssell.ini</filename>
+        <filename>ru-RU.com_emerald_field_serial.ini</filename>
+
+        <filename>ru-RU.com_emerald_gateway_2co.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_alipay.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_authorize.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_easysocial.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_eway.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_futurepay.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_garanti.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_google.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_interkassa.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_jomsocial.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_kazkom.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_offline.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_paypal.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_paysera.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_rbk.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_robokassa.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_skrill.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_stripe.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_tbc.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_vcs.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_webmoney.ini</filename>
+        <filename>ru-RU.com_emerald_gateway_yandex.ini</filename>
+
+        <filename>ru-RU.com_emerald_import_aec.ini</filename>
+        <filename>ru-RU.com_emerald_import_akeebasubs.ini</filename>
+        <filename>ru-RU.com_emerald_import_emerald8.ini</filename>
+        <filename>ru-RU.com_emerald_import_osemembership.ini</filename>
+        <filename>ru-RU.com_emerald_import_osmember.ini</filename>
+
+        <filename>ru-RU.com_emerald_rule_com_content.ini</filename>
+        <filename>ru-RU.com_emerald_rule_com_hwdmediashare.ini</filename>
+        <filename>ru-RU.com_emerald_rule_com_k2.ini</filename>
+        <filename>ru-RU.com_emerald_rule_com_kunena.ini</filename>
+        <filename>ru-RU.com_emerald_rule_com_remository.ini</filename>
+        <filename>ru-RU.com_emerald_rule_default.ini</filename>
+    </files>
+</extension>
+
+
+

@@ -1,0 +1,455 @@
+.postbox-wrapper {
+  border-radius: 20px;
+}
+.joms-postbox {
+  display        : none;
+  position       : fixed;
+  top            : 0px;
+  padding-top    : 55px;
+  height         : 100vh;
+  padding-bottom : 60px;
+  width          : 100%;
+  z-index        : 12;
+  overflow-y: auto;
+
+
+  .joms-postbox-tab .joms-postbox-action {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    padding: 0 24px;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    background: #253544;
+    color: white;
+    margin: 0;
+    justify-content: space-between;
+    z-index: 99;
+    transform: translate3d(0,0,0);
+  }
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  .joms-list.inline {
+    padding-bottom: 10px;
+  }
+
+  .joms-postbox__status-composer {
+    padding-bottom: 0;
+
+    .j-status-composer-toolbar {
+      padding: 10px 0 !important;
+      height: 70px;
+      width: 101%;
+      background: white;
+    }
+  }
+
+  ul.joms-postbox-emoticon.joms-list.clearfix {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+
+    li {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          margin: 0;
+        }
+        span {
+          margin: 0;
+        }
+      }
+
+    }
+
+  }
+
+
+  .minivid, video.minivid  {
+    height : 100% !important;
+    width  : 100% !important;;
+  }
+
+  .j-editor-touch-device .j-textarea {
+    position      : relative;
+    margin        : 0 auto;
+    color         : inherit;
+    display       : block;
+    text-align    : center;
+    min-height    : 78px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-top   : 28px;
+  }
+
+
+  &.is-active {
+    display         : flex;
+
+    .joms-postbox-dropdown.location-dropdown {
+      height: calc(100vh - 15.25rem);
+      overflow-y: auto;
+      max-height: 400px;
+      bottom: unset;
+      top: 22%;
+      width: unset;
+      left: 20px;
+      right: 20px;
+      margin: 0 auto;
+      position: fixed;
+      background: #fff;
+
+      ul.joms-postbox-locations {
+        height     : 100%;
+        max-height : unset;
+      }
+
+    }
+
+    .joms-postbox-preview {
+      display    : inline-flex;
+      overflow-x : auto;
+      width      : 100%;
+
+      &::-webkit-scrollbar {
+        display : none;
+      }
+
+      .joms-postbox-preview-inner {
+        margin          : 0;
+        padding         : 0;
+        display         : flex;
+        flex-direction  : row-reverse;
+        justify-content : flex-end;
+
+        .dz-image,  {
+          border-radius : 20px;
+          overflow      : hidden;
+          width         : 130px;
+          height        : 130px;
+          position      : relative;
+          display       : flex;
+          z-index       : 10;
+          margin-bottom : 15px;
+
+          svg {
+            &.js-icon-blue {
+              fill : #0077ff;
+            }
+            &.js-icon-file {
+              fill : #dcac2d;
+            }
+          }
+
+        }
+
+        .dz-filename:hover {
+          white-space: normal;
+          word-break: break-word;
+        }
+
+        .dz-details.audio {
+          width: 100%;
+          padding: 0 !important;
+          position: absolute !important;
+          bottom: 44px;
+          top: unset !important;
+        }
+
+      }
+
+    }
+
+    #joms-postbox-status {
+      width      : 100%;
+      overflow-y : auto;
+      border-radius: 20px;
+      -webkit-overflow-scrolling: auto !important;
+
+      .joms-postbox-dropdown.event-dropdown {
+        top: 33%;
+
+      }
+
+      span.j-mood-display {
+        padding  : 10px;
+        display  : block;
+      }
+
+      &::-webkit-scrollbar {
+        display : none;
+      }
+
+    }
+
+    > span {
+      position    : fixed;
+      top         : 0;
+      font-size   : 24px;
+      font-weight : 600;
+      background  : #253544;
+      color       : white;
+      width       : 100%;
+      text-align  : center;
+      height      : 57px;
+      line-height : 54px;
+    }
+
+    li {
+      flex-direction : column;
+
+      span.visible {
+        display    : block;
+        text-align : center;
+      }
+
+    }
+
+  }
+
+}
+
+a#addpost svg {
+ transition: all 0.2s;
+}
+
+#adpostmenu, .craft-menu {
+  bottom: 4.375rem;
+  top: 64px;
+  flex-direction: column;
+  padding: 0;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  border: none;
+  z-index: 14;
+  background: #fff;
+  max-height: unset;
+  height: unset;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: auto !important;
+
+  .joms-postbox-dropdown.mood-dropdown, .joms-postbox-dropdown.privacy-dropdown {
+    max-height: 360px;
+    bottom: unset;
+    top: 27%;
+    width: unset;
+    left: 20px;
+    right: 20px;
+    margin: 0 auto;
+    position: fixed;
+  }
+
+  ul.joms-list.inline {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+
+      li {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 50px;
+        padding: 0 40px;
+
+        &.active {
+          background-color: rgba(198, 251, 219, 0.15);
+        }
+      }
+  }
+
+
+  li {
+    border-bottom   : 1px solid #e7e7e7;
+
+    &:last-child {
+      border-bottom : none;
+    }
+
+    .joms-icon {
+      fill   : #253544;
+      width  : 23px;
+      height : 23px;
+    }
+
+  }
+
+}
+
+.postclose {
+  position    : fixed;
+  left        : 23px;
+  top         : 20px;
+  color       : white;
+  font-size   : 32px;
+  z-index     : 99;
+  font-weight : 400;
+}
+.joms-postbox-dropdown.mood-dropdown {
+  max-height : 360px;
+}
+
+.joms-postbox-fetched {
+
+  .joms-fetched-container {
+    displa         : flex;
+    flex-direction : column;
+    align-items    : center;
+
+      .joms-fetched-images  {
+        border-radius : 20px;
+        overflow      : hidden;
+        position      : relative;
+        display       : flex;
+        z-index       : 10;
+        margin-bottom : 15px;
+
+      }
+
+      .joms-fetched-close {
+        cursor     : pointer;
+        position   : absolute;
+        top        : 12px;
+        left       : 0px;
+        padding    : 1px 4px;
+        border     : 1px solid #dadada;
+        background : #fafafa;
+        font-size  : 11px;
+        z-index    : 999;
+      }
+  }
+}
+
+.colorful-status__color ul.colorful-status__color-list {
+  width: 100%;
+  left: 0 !important;
+  right: 0 !important;
+  padding-left: 10px;
+
+  li {
+    &.active {
+      border: 1px solid #dddddd !important;
+    }
+    &:first-child {
+      background-size: 50% !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+    }
+  }
+
+}
+
+.vue--postto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 5px;
+
+  span {
+    margin-right: 6px;
+    font-size: 14px;
+  }
+
+   select {
+    margin: 0;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 0 8px;
+  }
+
+}
+nav.joms-postbox-tab.joms-postbox-tab-root {
+  top: 0;
+  margin: 0;
+  padding-bottom: 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 57px;
+
+  ul.vue-topnav-root {
+    height: inherit;
+    background: #253544;
+    justify-content: space-around;
+
+    li.topnav-li {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      display: flex !important;
+      border-bottom: 0 !important;
+
+      span {
+        color: #fff;
+      }
+
+      svg {
+        fill: #fff !important;
+      }
+
+      &.active {
+        border-bottom: 1px solid #f9f9f9 !important;
+
+        &::after {
+          content: "";
+          position: absolute;
+          margin-left: 40px;
+          width: 10px;
+          top: 3px;
+          height: 10px;
+          background: #8bc34a;
+          color: #8bc34a;
+          z-index: 2;
+          border-radius: 50%;
+
+        }
+      }
+    }
+  }
+}
+.toolbar-bg-picker {
+  height: 53px;
+}
+.vue--joms-postbox-bkg {
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000ad;
+}
+.event-title-input {
+  text-align: center;
+  min-height: 64px;
+   input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    min-height: 50px;
+    font-size: 16px;
+  }
+}

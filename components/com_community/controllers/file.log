@@ -1,0 +1,336 @@
+********************************************* 1
+2022-07-31 10:41:46 user 533(IMG_3791) upload to 
+Array(    [name] => IMG_3791.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php8dkNm1    [error] => 0    [size] => 6334482)stdClass Object(    [creator] => 533    [filesize] => 6334482    [name] => IMG_3791    [created] => 2022-07-31 07:41:46    [type] => multimedia)
+********************************************* 2
+2022-07-31 10:41:47 user 533(IMG_3791) upload to images/files/activities/533/b4e15e3208f5e87b1010669c257770ab.MOV
+Array(    [name] => IMG_3791.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php8dkNm1    [error] => 0    [size] => 6334482)stdClass Object(    [creator] => 533    [filesize] => 6334482    [name] => IMG_3791    [created] => 2022-07-31 07:41:46    [type] => multimedia    [filepath] => images/files/activities/533/b4e15e3208f5e87b1010669c257770ab.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/533/thumbs/RuhZDJOwDzo.jpg)
+********************************************* 1
+2022-07-31 12:57:50 user 533(A013696D-8584-4B00-B61D-F26E03B0B711) upload to 
+Array(    [name] => A013696D-8584-4B00-B61D-F26E03B0B711.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpZWJOkZ    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => A013696D-8584-4B00-B61D-F26E03B0B711    [created] => 2022-07-31 09:57:50    [type] => images)
+********************************************* 2
+2022-07-31 12:57:50 user 533(A013696D-8584-4B00-B61D-F26E03B0B711) upload to images/files/activities/533/65ca9d7e6adcfd0ea84eee793db35cd1.jpeg
+Array(    [name] => A013696D-8584-4B00-B61D-F26E03B0B711.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpZWJOkZ    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => A013696D-8584-4B00-B61D-F26E03B0B711    [created] => 2022-07-31 09:57:50    [type] => images    [filepath] => images/files/activities/533/65ca9d7e6adcfd0ea84eee793db35cd1.jpeg    [actid] => -1)
+********************************************* 1
+2022-07-31 14:25:50 user 533(2547BD92-A6A3-4539-94C1-2B64203D9116) upload to 
+Array(    [name] => 2547BD92-A6A3-4539-94C1-2B64203D9116.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpt97Do4    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => 2547BD92-A6A3-4539-94C1-2B64203D9116    [created] => 2022-07-31 11:25:50    [type] => images)
+********************************************* 2
+2022-07-31 14:25:50 user 533(2547BD92-A6A3-4539-94C1-2B64203D9116) upload to images/files/activities/533/b28232d0937890717dd4c2a9dc6a35d9.jpeg
+Array(    [name] => 2547BD92-A6A3-4539-94C1-2B64203D9116.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpt97Do4    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => 2547BD92-A6A3-4539-94C1-2B64203D9116    [created] => 2022-07-31 11:25:50    [type] => images    [filepath] => images/files/activities/533/b28232d0937890717dd4c2a9dc6a35d9.jpeg    [actid] => -1)
+********************************************* 1
+2022-07-31 23:53:51 user 533(AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344) upload to 
+Array(    [name] => AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpiSoTv7    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344    [created] => 2022-07-31 20:53:51    [type] => images)
+********************************************* 2
+2022-07-31 23:53:51 user 533(AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344) upload to images/files/activities/533/33fa3d847d15dfacff9e8efa84e6c605.jpeg
+Array(    [name] => AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpiSoTv7    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => AF8ECCF6-2C84-48D8-A3C3-9FF57B11E344    [created] => 2022-07-31 20:53:51    [type] => images    [filepath] => images/files/activities/533/33fa3d847d15dfacff9e8efa84e6c605.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 11:39:29 user 544(VID-20220731-WA0005) upload to 
+Array(    [name] => VID-20220731-WA0005.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpGncOfI    [error] => 0    [size] => 874105)stdClass Object(    [creator] => 544    [filesize] => 874105    [name] => VID-20220731-WA0005    [created] => 2022-08-01 08:39:29    [type] => multimedia)
+********************************************* 2
+2022-08-01 11:39:29 user 544(VID-20220731-WA0005) upload to images/files/activities/544/c5684e1e97b16c15256bb870e8e70ad8.mp4
+Array(    [name] => VID-20220731-WA0005.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpGncOfI    [error] => 0    [size] => 874105)stdClass Object(    [creator] => 544    [filesize] => 874105    [name] => VID-20220731-WA0005    [created] => 2022-08-01 08:39:29    [type] => multimedia    [filepath] => images/files/activities/544/c5684e1e97b16c15256bb870e8e70ad8.mp4    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/loZ51ggbcYV.jpg)
+********************************************* 1
+2022-08-01 12:11:12 user 533(1F3E98BE-3D42-48A8-A803-87C7B741804A) upload to 
+Array(    [name] => 1F3E98BE-3D42-48A8-A803-87C7B741804A.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php2cXov7    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => 1F3E98BE-3D42-48A8-A803-87C7B741804A    [created] => 2022-08-01 09:11:12    [type] => images)
+********************************************* 2
+2022-08-01 12:11:12 user 533(1F3E98BE-3D42-48A8-A803-87C7B741804A) upload to images/files/activities/533/35eb6b2a8b54112f92730cc0ae1d840c.jpeg
+Array(    [name] => 1F3E98BE-3D42-48A8-A803-87C7B741804A.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php2cXov7    [error] => 0    [size] => 391521)stdClass Object(    [creator] => 533    [filesize] => 391521    [name] => 1F3E98BE-3D42-48A8-A803-87C7B741804A    [created] => 2022-08-01 09:11:12    [type] => images    [filepath] => images/files/activities/533/35eb6b2a8b54112f92730cc0ae1d840c.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 12:32:57 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to 
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpMfsuyg    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:32:57    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:32:58 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to images/files/activities/544/7dc7942d269bcd5c31bf5b7bcd2e02c3.mov
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpMfsuyg    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:32:57    [type] => multimedia    [filepath] => images/files/activities/544/7dc7942d269bcd5c31bf5b7bcd2e02c3.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/PqavCv8M5gm.jpg)
+********************************************* 1
+2022-08-01 12:33:58 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to 
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpyEATOO    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:33:58    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:33:58 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to images/files/activities/544/30980481645b49b545df0bb44b408ca7.mov
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpyEATOO    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:33:58    [type] => multimedia    [filepath] => images/files/activities/544/30980481645b49b545df0bb44b408ca7.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/K9bKxaVHwAN.jpg)
+********************************************* 1
+2022-08-01 12:34:01 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to 
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phplx5TYX    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:34:01    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:34:02 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to images/files/activities/544/4984cd7e457b83e0303d72cec3eeb237.mov
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phplx5TYX    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:34:01    [type] => multimedia    [filepath] => images/files/activities/544/4984cd7e457b83e0303d72cec3eeb237.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/Bsoq9AR2DMi.jpg)
+********************************************* 1
+2022-08-01 12:34:08 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to 
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpGMgylf    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:34:08    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:34:08 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to images/files/activities/544/be657ea68175a0252dfa1f73294864f0.mov
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpGMgylf    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:34:08    [type] => multimedia    [filepath] => images/files/activities/544/be657ea68175a0252dfa1f73294864f0.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/ThS54bGX0JG.jpg)
+********************************************* 1
+2022-08-01 12:44:37 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to 
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpUnREUO    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:44:37    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:44:37 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to images/files/activities/544/dcf8d6c6376e600562c589b55c37aaec.mov
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpUnREUO    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:44:37    [type] => multimedia    [filepath] => images/files/activities/544/dcf8d6c6376e600562c589b55c37aaec.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/hoFX3LTQt34.jpg)
+********************************************* 1
+2022-08-01 12:45:09 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to 
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phplYf8Bc    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:45:09    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:45:10 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to images/files/activities/544/7103167d93864ed67873b33e536a5025.mov
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phplYf8Bc    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:45:09    [type] => multimedia    [filepath] => images/files/activities/544/7103167d93864ed67873b33e536a5025.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/yDKmR5cYtaE.jpg)
+********************************************* 1
+2022-08-01 12:45:11 user 544(FDB95070-E23F-475C-AE2E-4AA2A0219396) upload to 
+Array(    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpjOhjNf    [error] => 0    [size] => 301677)stdClass Object(    [creator] => 544    [filesize] => 301677    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396    [created] => 2022-08-01 09:45:11    [type] => images)
+********************************************* 2
+2022-08-01 12:45:11 user 544(FDB95070-E23F-475C-AE2E-4AA2A0219396) upload to images/files/activities/544/a1c80c11720c13b3a5b2e8f96345ea95.jpeg
+Array(    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpjOhjNf    [error] => 0    [size] => 301677)stdClass Object(    [creator] => 544    [filesize] => 301677    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396    [created] => 2022-08-01 09:45:11    [type] => images    [filepath] => images/files/activities/544/a1c80c11720c13b3a5b2e8f96345ea95.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 12:45:14 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to 
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpP82OJo    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:45:14    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:45:14 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to images/files/activities/544/3aeae94e232c59283f5eff0bf21839d9.mov
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpP82OJo    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:45:14    [type] => multimedia    [filepath] => images/files/activities/544/3aeae94e232c59283f5eff0bf21839d9.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/EcIiMLMsJsr.jpg)
+********************************************* 1
+2022-08-01 12:45:18 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to 
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpX19bVz    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:45:18    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:45:19 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to images/files/activities/544/7d1806c9cfafc17763cc7a30f427743e.mov
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpX19bVz    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:45:18    [type] => multimedia    [filepath] => images/files/activities/544/7d1806c9cfafc17763cc7a30f427743e.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/CK7uDDvk4aK.jpg)
+********************************************* 1
+2022-08-01 12:45:26 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to 
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpLY4xET    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:45:26    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:45:26 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to images/files/activities/544/1ef655475c3473028d00d563a64ed82b.mov
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpLY4xET    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:45:26    [type] => multimedia    [filepath] => images/files/activities/544/1ef655475c3473028d00d563a64ed82b.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/ayvx4ZY8G2p.jpg)
+********************************************* 1
+2022-08-01 12:46:39 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to 
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/php63Hle0    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:46:39    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:46:40 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to images/files/activities/544/3eb67564afeb8b53e15a5921a6c03f18.mov
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/php63Hle0    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:46:39    [type] => multimedia    [filepath] => images/files/activities/544/3eb67564afeb8b53e15a5921a6c03f18.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/NfAYqrkeHJI.jpg)
+********************************************* 1
+2022-08-01 12:46:40 user 544(FDB95070-E23F-475C-AE2E-4AA2A0219396) upload to 
+Array(    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phprTKFpc    [error] => 0    [size] => 301677)stdClass Object(    [creator] => 544    [filesize] => 301677    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396    [created] => 2022-08-01 09:46:40    [type] => images)
+********************************************* 2
+2022-08-01 12:46:40 user 544(FDB95070-E23F-475C-AE2E-4AA2A0219396) upload to images/files/activities/544/a3e66f6d9b9e5d1d7632d0aa22942648.jpeg
+Array(    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phprTKFpc    [error] => 0    [size] => 301677)stdClass Object(    [creator] => 544    [filesize] => 301677    [name] => FDB95070-E23F-475C-AE2E-4AA2A0219396    [created] => 2022-08-01 09:46:40    [type] => images    [filepath] => images/files/activities/544/a3e66f6d9b9e5d1d7632d0aa22942648.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 12:46:43 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to 
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpsRTkDa    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:46:43    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:46:44 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to images/files/activities/544/6192589e85733fe62ad89e15322b7f51.mov
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpsRTkDa    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:46:43    [type] => multimedia    [filepath] => images/files/activities/544/6192589e85733fe62ad89e15322b7f51.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/qRyJFf5uOij.jpg)
+********************************************* 1
+2022-08-01 12:46:48 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to 
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpvPnfMl    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:46:48    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:46:48 user 544(47D69C98-E22A-41E6-B961-AB0FFF62F027) upload to images/files/activities/544/0e3dc86e754c81994d37cd6aae4540b0.mov
+Array(    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpvPnfMl    [error] => 0    [size] => 2994354)stdClass Object(    [creator] => 544    [filesize] => 2994354    [name] => 47D69C98-E22A-41E6-B961-AB0FFF62F027    [created] => 2022-08-01 09:46:48    [type] => multimedia    [filepath] => images/files/activities/544/0e3dc86e754c81994d37cd6aae4540b0.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/NNIoG8Luzwj.jpg)
+********************************************* 1
+2022-08-01 12:46:54 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to 
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpJJQg5B    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:46:54    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:46:54 user 544(22957863-8313-4B0E-BC21-147248BBA71A) upload to images/files/activities/544/e06ae285fa3a5841a729ed03ed48299f.mov
+Array(    [name] => 22957863-8313-4B0E-BC21-147248BBA71A.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpJJQg5B    [error] => 0    [size] => 4822083)stdClass Object(    [creator] => 544    [filesize] => 4822083    [name] => 22957863-8313-4B0E-BC21-147248BBA71A    [created] => 2022-08-01 09:46:54    [type] => multimedia    [filepath] => images/files/activities/544/e06ae285fa3a5841a729ed03ed48299f.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/Txk97UHXoCB.jpg)
+********************************************* 1
+2022-08-01 12:47:59 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to 
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpF1P6Gl    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:47:59    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:47:59 user 544(13C98653-26BB-4F39-AB91-49871C1E5F3C) upload to images/files/activities/544/5e3b12cc831113476be2375c8da6c09b.mov
+Array(    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C.mov    [type] => video/quicktime    [tmp_name] => /tmp/phpF1P6Gl    [error] => 0    [size] => 2058823)stdClass Object(    [creator] => 544    [filesize] => 2058823    [name] => 13C98653-26BB-4F39-AB91-49871C1E5F3C    [created] => 2022-08-01 09:47:59    [type] => multimedia    [filepath] => images/files/activities/544/5e3b12cc831113476be2375c8da6c09b.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/5SR3GEsCdwt.jpg)
+********************************************* 1
+2022-08-01 12:48:40 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to 
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/php67rQO4    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:48:40    [type] => multimedia)
+********************************************* 2
+2022-08-01 12:48:41 user 544(E289B017-A130-40A0-9FEC-2EA1B519F14A) upload to images/files/activities/544/6036d946fd05f2c1abe28e07d3a2e42d.mov
+Array(    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A.mov    [type] => video/quicktime    [tmp_name] => /tmp/php67rQO4    [error] => 0    [size] => 8966401)stdClass Object(    [creator] => 544    [filesize] => 8966401    [name] => E289B017-A130-40A0-9FEC-2EA1B519F14A    [created] => 2022-08-01 09:48:40    [type] => multimedia    [filepath] => images/files/activities/544/6036d946fd05f2c1abe28e07d3a2e42d.mov    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/aQeRiiU1mKK.jpg)
+********************************************* 1
+2022-08-01 13:04:31 user 544(0177BD07-21F9-4078-A5FD-95AD78528C0E) upload to 
+Array(    [name] => 0177BD07-21F9-4078-A5FD-95AD78528C0E.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php1nvibh    [error] => 0    [size] => 118980)stdClass Object(    [creator] => 544    [filesize] => 118980    [name] => 0177BD07-21F9-4078-A5FD-95AD78528C0E    [created] => 2022-08-01 10:04:31    [type] => images)
+********************************************* 2
+2022-08-01 13:04:31 user 544(0177BD07-21F9-4078-A5FD-95AD78528C0E) upload to images/files/activities/544/2912e579b24eb0eb6cd936de58a87ee5.jpeg
+Array(    [name] => 0177BD07-21F9-4078-A5FD-95AD78528C0E.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php1nvibh    [error] => 0    [size] => 118980)stdClass Object(    [creator] => 544    [filesize] => 118980    [name] => 0177BD07-21F9-4078-A5FD-95AD78528C0E    [created] => 2022-08-01 10:04:31    [type] => images    [filepath] => images/files/activities/544/2912e579b24eb0eb6cd936de58a87ee5.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:04:45 user 544(04D6C7BA-3FF6-46FC-878D-645AB514C816) upload to 
+Array(    [name] => 04D6C7BA-3FF6-46FC-878D-645AB514C816.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpksKFRS    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 04D6C7BA-3FF6-46FC-878D-645AB514C816    [created] => 2022-08-01 10:04:45    [type] => images)
+********************************************* 2
+2022-08-01 13:04:45 user 544(04D6C7BA-3FF6-46FC-878D-645AB514C816) upload to images/files/activities/544/0d5de49d33a6830dd0d0407f549b152c.jpeg
+Array(    [name] => 04D6C7BA-3FF6-46FC-878D-645AB514C816.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpksKFRS    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 04D6C7BA-3FF6-46FC-878D-645AB514C816    [created] => 2022-08-01 10:04:45    [type] => images    [filepath] => images/files/activities/544/0d5de49d33a6830dd0d0407f549b152c.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:07:22 user 544(6E08C19B-D190-48A2-9972-7BF73C01FBAF) upload to 
+Array(    [name] => 6E08C19B-D190-48A2-9972-7BF73C01FBAF.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpS29Nrv    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 6E08C19B-D190-48A2-9972-7BF73C01FBAF    [created] => 2022-08-01 10:07:22    [type] => images)
+********************************************* 2
+2022-08-01 13:07:22 user 544(6E08C19B-D190-48A2-9972-7BF73C01FBAF) upload to images/files/activities/544/cceeecc6a2a49f3b7162edaeb57ef38a.jpeg
+Array(    [name] => 6E08C19B-D190-48A2-9972-7BF73C01FBAF.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpS29Nrv    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 6E08C19B-D190-48A2-9972-7BF73C01FBAF    [created] => 2022-08-01 10:07:22    [type] => images    [filepath] => images/files/activities/544/cceeecc6a2a49f3b7162edaeb57ef38a.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:07:22 user 544(E9A92279-F481-4A86-80DD-658B204C63F3) upload to 
+Array(    [name] => E9A92279-F481-4A86-80DD-658B204C63F3.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php7Vlakb    [error] => 0    [size] => 149711)stdClass Object(    [creator] => 544    [filesize] => 149711    [name] => E9A92279-F481-4A86-80DD-658B204C63F3    [created] => 2022-08-01 10:07:22    [type] => images)
+********************************************* 2
+2022-08-01 13:07:22 user 544(E9A92279-F481-4A86-80DD-658B204C63F3) upload to images/files/activities/544/8a49d6122d72cc1bc08b9490db5db98c.jpeg
+Array(    [name] => E9A92279-F481-4A86-80DD-658B204C63F3.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php7Vlakb    [error] => 0    [size] => 149711)stdClass Object(    [creator] => 544    [filesize] => 149711    [name] => E9A92279-F481-4A86-80DD-658B204C63F3    [created] => 2022-08-01 10:07:22    [type] => images    [filepath] => images/files/activities/544/8a49d6122d72cc1bc08b9490db5db98c.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:22:43 user 544(17A59E21-4CDC-4C9C-A702-6F085EA96209) upload to 
+Array(    [name] => 17A59E21-4CDC-4C9C-A702-6F085EA96209.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpPzWfJr    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 17A59E21-4CDC-4C9C-A702-6F085EA96209    [created] => 2022-08-01 10:22:43    [type] => images)
+********************************************* 2
+2022-08-01 13:22:43 user 544(17A59E21-4CDC-4C9C-A702-6F085EA96209) upload to images/files/activities/544/032e23906a7e57f01a8d9785b4bcd6df.jpeg
+Array(    [name] => 17A59E21-4CDC-4C9C-A702-6F085EA96209.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpPzWfJr    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => 17A59E21-4CDC-4C9C-A702-6F085EA96209    [created] => 2022-08-01 10:22:43    [type] => images    [filepath] => images/files/activities/544/032e23906a7e57f01a8d9785b4bcd6df.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:22:44 user 544(54D59913-DB99-4E83-B286-4F368DD6C986) upload to 
+Array(    [name] => 54D59913-DB99-4E83-B286-4F368DD6C986.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpLkdj73    [error] => 0    [size] => 149711)stdClass Object(    [creator] => 544    [filesize] => 149711    [name] => 54D59913-DB99-4E83-B286-4F368DD6C986    [created] => 2022-08-01 10:22:44    [type] => images)
+********************************************* 2
+2022-08-01 13:22:44 user 544(54D59913-DB99-4E83-B286-4F368DD6C986) upload to images/files/activities/544/e366aa24b33ec286feeaa88a0d278445.jpeg
+Array(    [name] => 54D59913-DB99-4E83-B286-4F368DD6C986.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpLkdj73    [error] => 0    [size] => 149711)stdClass Object(    [creator] => 544    [filesize] => 149711    [name] => 54D59913-DB99-4E83-B286-4F368DD6C986    [created] => 2022-08-01 10:22:44    [type] => images    [filepath] => images/files/activities/544/e366aa24b33ec286feeaa88a0d278445.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:22:46 user 544(AC98E6F3-D65E-405C-B6D4-2AF165B9DE83) upload to 
+Array(    [name] => AC98E6F3-D65E-405C-B6D4-2AF165B9DE83.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpou0nfy    [error] => 0    [size] => 218557)stdClass Object(    [creator] => 544    [filesize] => 218557    [name] => AC98E6F3-D65E-405C-B6D4-2AF165B9DE83    [created] => 2022-08-01 10:22:46    [type] => images)
+********************************************* 2
+2022-08-01 13:22:46 user 544(AC98E6F3-D65E-405C-B6D4-2AF165B9DE83) upload to images/files/activities/544/796ff4585ea1911c6e18b2a21b127cb7.jpeg
+Array(    [name] => AC98E6F3-D65E-405C-B6D4-2AF165B9DE83.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpou0nfy    [error] => 0    [size] => 218557)stdClass Object(    [creator] => 544    [filesize] => 218557    [name] => AC98E6F3-D65E-405C-B6D4-2AF165B9DE83    [created] => 2022-08-01 10:22:46    [type] => images    [filepath] => images/files/activities/544/796ff4585ea1911c6e18b2a21b127cb7.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:22:52 user 544(EEB33FA3-A5DA-4D70-9379-292773E298BF) upload to 
+Array(    [name] => EEB33FA3-A5DA-4D70-9379-292773E298BF.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpWyqX6O    [error] => 0    [size] => 5093211)stdClass Object(    [creator] => 544    [filesize] => 5093211    [name] => EEB33FA3-A5DA-4D70-9379-292773E298BF    [created] => 2022-08-01 10:22:52    [type] => images)
+********************************************* 2
+2022-08-01 13:22:52 user 544(EEB33FA3-A5DA-4D70-9379-292773E298BF) upload to images/files/activities/544/5eec36855c094647e1519dbefd298c7f.jpeg
+Array(    [name] => EEB33FA3-A5DA-4D70-9379-292773E298BF.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpWyqX6O    [error] => 0    [size] => 5093211)stdClass Object(    [creator] => 544    [filesize] => 5093211    [name] => EEB33FA3-A5DA-4D70-9379-292773E298BF    [created] => 2022-08-01 10:22:52    [type] => images    [filepath] => images/files/activities/544/5eec36855c094647e1519dbefd298c7f.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:22:55 user 544(8A32420D-C727-4DC1-914E-F0CD3BD8B168) upload to 
+Array(    [name] => 8A32420D-C727-4DC1-914E-F0CD3BD8B168.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpLSY8qW    [error] => 0    [size] => 1852262)stdClass Object(    [creator] => 544    [filesize] => 1852262    [name] => 8A32420D-C727-4DC1-914E-F0CD3BD8B168    [created] => 2022-08-01 10:22:55    [type] => images)
+********************************************* 2
+2022-08-01 13:22:55 user 544(8A32420D-C727-4DC1-914E-F0CD3BD8B168) upload to images/files/activities/544/eb4d8e00b4f4a05db5003adc6b941834.jpeg
+Array(    [name] => 8A32420D-C727-4DC1-914E-F0CD3BD8B168.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpLSY8qW    [error] => 0    [size] => 1852262)stdClass Object(    [creator] => 544    [filesize] => 1852262    [name] => 8A32420D-C727-4DC1-914E-F0CD3BD8B168    [created] => 2022-08-01 10:22:55    [type] => images    [filepath] => images/files/activities/544/eb4d8e00b4f4a05db5003adc6b941834.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 13:25:04 user 544(BBE06919-A5D8-4E44-A5A8-9F35EFCD0244) upload to 
+Array(    [name] => BBE06919-A5D8-4E44-A5A8-9F35EFCD0244.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpBelJkn    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => BBE06919-A5D8-4E44-A5A8-9F35EFCD0244    [created] => 2022-08-01 10:25:04    [type] => images)
+********************************************* 2
+2022-08-01 13:25:04 user 544(BBE06919-A5D8-4E44-A5A8-9F35EFCD0244) upload to images/files/activities/544/fbfefea97f26589d3ff0b37af9853699.jpeg
+Array(    [name] => BBE06919-A5D8-4E44-A5A8-9F35EFCD0244.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpBelJkn    [error] => 0    [size] => 289623)stdClass Object(    [creator] => 544    [filesize] => 289623    [name] => BBE06919-A5D8-4E44-A5A8-9F35EFCD0244    [created] => 2022-08-01 10:25:04    [type] => images    [filepath] => images/files/activities/544/fbfefea97f26589d3ff0b37af9853699.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 14:05:35 user 544(IMG_0014) upload to 
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpz3M8j7    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:05:35    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:05:36 user 544(IMG_0014) upload to images/files/activities/544/424cc50a4ca9d7940086ee2e06746b40.MOV
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpz3M8j7    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:05:35    [type] => multimedia    [filepath] => images/files/activities/544/424cc50a4ca9d7940086ee2e06746b40.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/TDmkhWnZUp0.jpg)
+********************************************* 1
+2022-08-01 14:05:57 user 544(IMG_0017) upload to 
+Array(    [name] => IMG_0017.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpqEylX2    [error] => 0    [size] => 16685302)stdClass Object(    [creator] => 544    [filesize] => 16685302    [name] => IMG_0017    [created] => 2022-08-01 11:05:57    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:05:58 user 544(IMG_0017) upload to images/files/activities/544/dbdb8eea1295c78aede56dbca1d8e0da.MOV
+Array(    [name] => IMG_0017.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpqEylX2    [error] => 0    [size] => 16685302)stdClass Object(    [creator] => 544    [filesize] => 16685302    [name] => IMG_0017    [created] => 2022-08-01 11:05:57    [type] => multimedia    [filepath] => images/files/activities/544/dbdb8eea1295c78aede56dbca1d8e0da.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/J7CyQbXlChN.jpg)
+********************************************* 1
+2022-08-01 14:11:47 user 544(IMG_0014) upload to 
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpjcZHxP    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:11:47    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:11:48 user 544(IMG_0014) upload to images/files/activities/544/f225cc3b52d28a1307f0f932c2dbf732.MOV
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpjcZHxP    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:11:47    [type] => multimedia    [filepath] => images/files/activities/544/f225cc3b52d28a1307f0f932c2dbf732.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/T5h3H11Eugt.jpg)
+********************************************* 1
+2022-08-01 14:12:09 user 544(IMG_0017) upload to 
+Array(    [name] => IMG_0017.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpExgH7J    [error] => 0    [size] => 16685302)stdClass Object(    [creator] => 544    [filesize] => 16685302    [name] => IMG_0017    [created] => 2022-08-01 11:12:09    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:12:09 user 544(IMG_0017) upload to images/files/activities/544/b8389ae5fe93c69519c72468039f6d6d.MOV
+Array(    [name] => IMG_0017.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpExgH7J    [error] => 0    [size] => 16685302)stdClass Object(    [creator] => 544    [filesize] => 16685302    [name] => IMG_0017    [created] => 2022-08-01 11:12:09    [type] => multimedia    [filepath] => images/files/activities/544/b8389ae5fe93c69519c72468039f6d6d.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/360Rw1OdP45.jpg)
+********************************************* 1
+2022-08-01 14:12:13 user 544(A9FE6450-DF60-434E-A620-9386BB5634CC) upload to 
+Array(    [name] => A9FE6450-DF60-434E-A620-9386BB5634CC.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php5GOObU    [error] => 0    [size] => 2505426)stdClass Object(    [creator] => 544    [filesize] => 2505426    [name] => A9FE6450-DF60-434E-A620-9386BB5634CC    [created] => 2022-08-01 11:12:13    [type] => images)
+********************************************* 2
+2022-08-01 14:12:13 user 544(A9FE6450-DF60-434E-A620-9386BB5634CC) upload to images/files/activities/544/304b9908cbaecc0bd89dbec24e39bfcc.jpeg
+Array(    [name] => A9FE6450-DF60-434E-A620-9386BB5634CC.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/php5GOObU    [error] => 0    [size] => 2505426)stdClass Object(    [creator] => 544    [filesize] => 2505426    [name] => A9FE6450-DF60-434E-A620-9386BB5634CC    [created] => 2022-08-01 11:12:13    [type] => images    [filepath] => images/files/activities/544/304b9908cbaecc0bd89dbec24e39bfcc.jpeg    [actid] => -1)
+********************************************* 1
+2022-08-01 14:14:28 user 544(IMG_0014) upload to 
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpABnzTC    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:14:28    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:14:29 user 544(IMG_0014) upload to images/files/activities/544/729fa4177833ade87720797bdb5d734b.MOV
+Array(    [name] => IMG_0014.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpABnzTC    [error] => 0    [size] => 11309071)stdClass Object(    [creator] => 544    [filesize] => 11309071    [name] => IMG_0014    [created] => 2022-08-01 11:14:28    [type] => multimedia    [filepath] => images/files/activities/544/729fa4177833ade87720797bdb5d734b.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/ZMv6K5IXiGC.jpg)
+********************************************* 1
+2022-08-01 14:15:04 user 544(IMG_0015) upload to 
+Array(    [name] => IMG_0015.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php3hQYm9    [error] => 0    [size] => 28787132)stdClass Object(    [creator] => 544    [filesize] => 28787132    [name] => IMG_0015    [created] => 2022-08-01 11:15:04    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:15:05 user 544(IMG_0015) upload to images/files/activities/544/70e4aaf9b97c2ee4393410a8180de9b5.MOV
+Array(    [name] => IMG_0015.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php3hQYm9    [error] => 0    [size] => 28787132)stdClass Object(    [creator] => 544    [filesize] => 28787132    [name] => IMG_0015    [created] => 2022-08-01 11:15:04    [type] => multimedia    [filepath] => images/files/activities/544/70e4aaf9b97c2ee4393410a8180de9b5.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/jDNUXJ1qKOM.jpg)
+********************************************* 1
+2022-08-01 14:29:13 user 533(IMG_3810) upload to 
+Array(    [name] => IMG_3810.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpRIY29Z    [error] => 0    [size] => 15503040)stdClass Object(    [creator] => 533    [filesize] => 15503040    [name] => IMG_3810    [created] => 2022-08-01 11:29:13    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:29:13 user 533(IMG_3810) upload to images/files/activities/533/87529c7eb5792fa4412ba097cd3b92e6.MOV
+Array(    [name] => IMG_3810.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpRIY29Z    [error] => 0    [size] => 15503040)stdClass Object(    [creator] => 533    [filesize] => 15503040    [name] => IMG_3810    [created] => 2022-08-01 11:29:13    [type] => multimedia    [filepath] => images/files/activities/533/87529c7eb5792fa4412ba097cd3b92e6.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/533/thumbs/k5RiGe7fBnK.jpg)
+********************************************* 1
+2022-08-01 14:31:35 user 533(IMG_3761) upload to 
+Array(    [name] => IMG_3761.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpIKaRL1    [error] => 0    [size] => 4171585)stdClass Object(    [creator] => 533    [filesize] => 4171585    [name] => IMG_3761    [created] => 2022-08-01 11:31:35    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:31:36 user 533(IMG_3761) upload to images/files/activities/533/0d84145380436141a11b0682133cdb49.MOV
+Array(    [name] => IMG_3761.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpIKaRL1    [error] => 0    [size] => 4171585)stdClass Object(    [creator] => 533    [filesize] => 4171585    [name] => IMG_3761    [created] => 2022-08-01 11:31:35    [type] => multimedia    [filepath] => images/files/activities/533/0d84145380436141a11b0682133cdb49.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/533/thumbs/zEsz43lJ3qw.jpg)
+********************************************* 1
+2022-08-01 14:32:59 user 533(IMG_3729) upload to 
+Array(    [name] => IMG_3729.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpxxmTnz    [error] => 0    [size] => 52505055)stdClass Object(    [creator] => 533    [filesize] => 52505055    [name] => IMG_3729    [created] => 2022-08-01 11:32:59    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:33:00 user 533(IMG_3729) upload to images/files/activities/533/bc188d0ad65909fef0fbb9a1ff44055d.MOV
+Array(    [name] => IMG_3729.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpxxmTnz    [error] => 0    [size] => 52505055)stdClass Object(    [creator] => 533    [filesize] => 52505055    [name] => IMG_3729    [created] => 2022-08-01 11:32:59    [type] => multimedia    [filepath] => images/files/activities/533/bc188d0ad65909fef0fbb9a1ff44055d.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/533/thumbs/OCkBJuEXRtg.jpg)
+********************************************* 1
+2022-08-01 14:33:04 user 533(IMG_3727) upload to 
+Array(    [name] => IMG_3727.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpjUczyK    [error] => 0    [size] => 14649801)stdClass Object(    [creator] => 533    [filesize] => 14649801    [name] => IMG_3727    [created] => 2022-08-01 11:33:04    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:33:04 user 533(IMG_3727) upload to images/files/activities/533/d82601e6ffa91db23566f4ec365b5dfd.MOV
+Array(    [name] => IMG_3727.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpjUczyK    [error] => 0    [size] => 14649801)stdClass Object(    [creator] => 533    [filesize] => 14649801    [name] => IMG_3727    [created] => 2022-08-01 11:33:04    [type] => multimedia    [filepath] => images/files/activities/533/d82601e6ffa91db23566f4ec365b5dfd.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/533/thumbs/A2kZJBIUK4l.jpg)
+********************************************* 1
+2022-08-01 14:40:43 user 593(IMG_0138) upload to 
+Array(    [name] => IMG_0138.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpAuEwLb    [error] => 0    [size] => 4191579)stdClass Object(    [creator] => 593    [filesize] => 4191579    [name] => IMG_0138    [created] => 2022-08-01 11:40:43    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:40:44 user 593(IMG_0138) upload to images/files/activities/593/22e9716ee10b58b8a1ea90114ee2d619.MOV
+Array(    [name] => IMG_0138.MOV    [type] => video/quicktime    [tmp_name] => /tmp/phpAuEwLb    [error] => 0    [size] => 4191579)stdClass Object(    [creator] => 593    [filesize] => 4191579    [name] => IMG_0138    [created] => 2022-08-01 11:40:43    [type] => multimedia    [filepath] => images/files/activities/593/22e9716ee10b58b8a1ea90114ee2d619.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/593/thumbs/3RTWNWhCTKe.jpg)
+********************************************* 1
+2022-08-01 14:43:59 user 593(IMG_0140) upload to 
+Array(    [name] => IMG_0140.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php0FaNks    [error] => 0    [size] => 4944155)stdClass Object(    [creator] => 593    [filesize] => 4944155    [name] => IMG_0140    [created] => 2022-08-01 11:43:59    [type] => multimedia)
+********************************************* 2
+2022-08-01 14:44:00 user 593(IMG_0140) upload to images/files/activities/593/aae7ee0b013654e5a7f07213f68411d3.MOV
+Array(    [name] => IMG_0140.MOV    [type] => video/quicktime    [tmp_name] => /tmp/php0FaNks    [error] => 0    [size] => 4944155)stdClass Object(    [creator] => 593    [filesize] => 4944155    [name] => IMG_0140    [created] => 2022-08-01 11:43:59    [type] => multimedia    [filepath] => images/files/activities/593/aae7ee0b013654e5a7f07213f68411d3.MOV    [actid] => -1    [thumb] => uploads/video/social/videos/593/thumbs/tAmwketkt94.jpg)
+********************************************* 1
+2022-08-01 16:55:57 user 544(VID-20220731-WA0004) upload to 
+Array(    [name] => VID-20220731-WA0004.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpEPVNW0    [error] => 0    [size] => 2084168)stdClass Object(    [creator] => 544    [filesize] => 2084168    [name] => VID-20220731-WA0004    [created] => 2022-08-01 13:55:57    [type] => multimedia)
+********************************************* 2
+2022-08-01 16:55:57 user 544(VID-20220731-WA0004) upload to images/files/activities/544/5728e3925ab5a93692cb051bf69e6e9c.mp4
+Array(    [name] => VID-20220731-WA0004.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpEPVNW0    [error] => 0    [size] => 2084168)stdClass Object(    [creator] => 544    [filesize] => 2084168    [name] => VID-20220731-WA0004    [created] => 2022-08-01 13:55:57    [type] => multimedia    [filepath] => images/files/activities/544/5728e3925ab5a93692cb051bf69e6e9c.mp4    [actid] => -1    [thumb] => uploads/video/social/videos/544/thumbs/sIYfNKBXAsf.jpg)
+********************************************* 1
+2022-08-04 00:34:32 user 544(Screenshot_20220804-003357_Chrome) upload to 
+Array(    [name] => Screenshot_20220804-003357_Chrome.jpg    [type] => image/jpeg    [tmp_name] => /tmp/php5cquFH    [error] => 0    [size] => 28931)stdClass Object(    [creator] => 544    [filesize] => 28931    [name] => Screenshot_20220804-003357_Chrome    [created] => 2022-08-03 21:34:32    [type] => images)
+********************************************* 2
+2022-08-04 00:34:32 user 544(Screenshot_20220804-003357_Chrome) upload to images/files/activities/544/658412c24edeb3db110afdd9f58cf563.jpg
+Array(    [name] => Screenshot_20220804-003357_Chrome.jpg    [type] => image/jpeg    [tmp_name] => /tmp/php5cquFH    [error] => 0    [size] => 28931)stdClass Object(    [creator] => 544    [filesize] => 28931    [name] => Screenshot_20220804-003357_Chrome    [created] => 2022-08-03 21:34:32    [type] => images    [filepath] => images/files/activities/544/658412c24edeb3db110afdd9f58cf563.jpg    [actid] => -1)
+********************************************* 1
+2022-08-07 20:46:20 user 587(IMG_20220807_201651_870) upload to 
+Array(    [name] => IMG_20220807_201651_870.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpX2Mbk4    [error] => 0    [size] => 2416496)stdClass Object(    [creator] => 587    [filesize] => 2416496    [name] => IMG_20220807_201651_870    [created] => 2022-08-07 17:46:20    [type] => images)
+********************************************* 2
+2022-08-07 20:46:20 user 587(IMG_20220807_201651_870) upload to images/files/activities/587/9abbcbef41b429070460c6e06298d14a.jpg
+Array(    [name] => IMG_20220807_201651_870.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpX2Mbk4    [error] => 0    [size] => 2416496)stdClass Object(    [creator] => 587    [filesize] => 2416496    [name] => IMG_20220807_201651_870    [created] => 2022-08-07 17:46:20    [type] => images    [filepath] => images/files/activities/587/9abbcbef41b429070460c6e06298d14a.jpg    [actid] => -1)
+********************************************* 1
+2022-08-07 20:47:05 user 587(InShot_20220730_183509942) upload to 
+Array(    [name] => InShot_20220730_183509942.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpqLl0rU    [error] => 0    [size] => 64970622)stdClass Object(    [creator] => 587    [filesize] => 64970622    [name] => InShot_20220730_183509942    [created] => 2022-08-07 17:47:05    [type] => multimedia)
+********************************************* 2
+2022-08-07 20:47:06 user 587(InShot_20220730_183509942) upload to images/files/activities/587/091d3824cde7530446224eaa7710afd2.mp4
+Array(    [name] => InShot_20220730_183509942.mp4    [type] => video/mp4    [tmp_name] => /tmp/phpqLl0rU    [error] => 0    [size] => 64970622)stdClass Object(    [creator] => 587    [filesize] => 64970622    [name] => InShot_20220730_183509942    [created] => 2022-08-07 17:47:05    [type] => multimedia    [filepath] => images/files/activities/587/091d3824cde7530446224eaa7710afd2.mp4    [actid] => -1    [thumb] => uploads/video/social/videos/587/thumbs/ylCPlaXUQSE.jpg)
+********************************************* 1
+2022-08-12 20:55:04 user 535(IMG_20220812_195909) upload to 
+Array(    [name] => IMG_20220812_195909.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpMvcN4l    [error] => 0    [size] => 105083)stdClass Object(    [creator] => 535    [filesize] => 105083    [name] => IMG_20220812_195909    [created] => 2022-08-12 17:55:04    [type] => images)
+********************************************* 2
+2022-08-12 20:55:04 user 535(IMG_20220812_195909) upload to images/files/activities/535/fff87f43ff652f074c185e488463be7e.jpg
+Array(    [name] => IMG_20220812_195909.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpMvcN4l    [error] => 0    [size] => 105083)stdClass Object(    [creator] => 535    [filesize] => 105083    [name] => IMG_20220812_195909    [created] => 2022-08-12 17:55:04    [type] => images    [filepath] => images/files/activities/535/fff87f43ff652f074c185e488463be7e.jpg    [actid] => -1)
+********************************************* 1
+2022-09-03 10:44:22 user 532(photo_2022-08-30_23-52-56) upload to 
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpVxVIS0    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:44:22    [type] => images)
+********************************************* 2
+2022-09-03 10:44:22 user 532(photo_2022-08-30_23-52-56) upload to images/files/activities/532/19ba045b0508965e61c211106a7d612e.jpg
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpVxVIS0    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:44:22    [type] => images    [filepath] => images/files/activities/532/19ba045b0508965e61c211106a7d612e.jpg    [actid] => -1)
+********************************************* 1
+2022-09-03 10:47:30 user 532(photo_2022-08-30_23-52-56) upload to 
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/php8CZPkD    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:47:30    [type] => images)
+********************************************* 2
+2022-09-03 10:47:30 user 532(photo_2022-08-30_23-52-56) upload to images/files/activities/532/0ae8541ba7cc41baefccd583f5151e19.jpg
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/php8CZPkD    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:47:30    [type] => images    [filepath] => images/files/activities/532/0ae8541ba7cc41baefccd583f5151e19.jpg    [actid] => -1)
+********************************************* 1
+2022-09-03 10:48:13 user 532(photo_2022-08-30_23-52-56) upload to 
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpXyewRn    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:48:13    [type] => images)
+********************************************* 2
+2022-09-03 10:48:13 user 532(photo_2022-08-30_23-52-56) upload to images/files/activities/532/8b14fd609c276e41a46a3d345d39e35f.jpg
+Array(    [name] => photo_2022-08-30_23-52-56.jpg    [type] => image/jpeg    [tmp_name] => /tmp/phpXyewRn    [error] => 0    [size] => 118740)stdClass Object(    [creator] => 532    [filesize] => 118740    [name] => photo_2022-08-30_23-52-56    [created] => 2022-09-03 07:48:13    [type] => images    [filepath] => images/files/activities/532/8b14fd609c276e41a46a3d345d39e35f.jpg    [actid] => -1)
+********************************************* 1
+2022-09-10 10:31:48 user 550(chernaya-pyatikonechnaya-zvezda) upload to 
+Array(    [name] => chernaya-pyatikonechnaya-zvezda.png    [type] => image/png    [tmp_name] => /tmp/php3YqFhH    [error] => 0    [size] => 44857)stdClass Object(    [creator] => 550    [filesize] => 44857    [name] => chernaya-pyatikonechnaya-zvezda    [created] => 2022-09-10 07:31:48    [type] => images)
+********************************************* 2
+2022-09-10 10:31:48 user 550(chernaya-pyatikonechnaya-zvezda) upload to images/files/activities/550/cce56780e985c874f309fae710b90fb2.png
+Array(    [name] => chernaya-pyatikonechnaya-zvezda.png    [type] => image/png    [tmp_name] => /tmp/php3YqFhH    [error] => 0    [size] => 44857)stdClass Object(    [creator] => 550    [filesize] => 44857    [name] => chernaya-pyatikonechnaya-zvezda    [created] => 2022-09-10 07:31:48    [type] => images    [filepath] => images/files/activities/550/cce56780e985c874f309fae710b90fb2.png    [actid] => -1)
+********************************************* 1
+2022-10-07 15:51:15 user 533(C889C9CD-69FE-47DA-9D2E-93ECE074B7EC) upload to 
+Array(    [name] => C889C9CD-69FE-47DA-9D2E-93ECE074B7EC.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpEF9OB0    [error] => 0    [size] => 130917)stdClass Object(    [creator] => 533    [filesize] => 130917    [name] => C889C9CD-69FE-47DA-9D2E-93ECE074B7EC    [created] => 2022-10-07 12:51:15    [type] => images)
+********************************************* 2
+2022-10-07 15:51:15 user 533(C889C9CD-69FE-47DA-9D2E-93ECE074B7EC) upload to images/files/activities/533/0e0764de39952fd05427f3e41b3b49f7.jpeg
+Array(    [name] => C889C9CD-69FE-47DA-9D2E-93ECE074B7EC.jpeg    [type] => image/jpeg    [tmp_name] => /tmp/phpEF9OB0    [error] => 0    [size] => 130917)stdClass Object(    [creator] => 533    [filesize] => 130917    [name] => C889C9CD-69FE-47DA-9D2E-93ECE074B7EC    [created] => 2022-10-07 12:51:15    [type] => images    [filepath] => images/files/activities/533/0e0764de39952fd05427f3e41b3b49f7.jpeg    [actid] => -1)

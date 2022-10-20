@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="search" method="upgrade">
+	<name>Search - Emerald</name>
+	<author>MintJoomla</author>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>http://www.mintjoomla.com</authorUrl>
+	<creationDate>June 2014</creationDate>
+	<copyright>(c) 2014 MintJoomla</copyright>
+	<version>10.1</version>
+	<description>Search Plugin for Emerald</description>
+	<files>
+		<filename plugin="emerald">emerald.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/libraries/mint/forms/fields/">
+				<field name="search_limit" type="text" default="50" label="Search Limit" size="5" />
+				<field name="area_name" type="text" default="Emerald" label="Area label in Search" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

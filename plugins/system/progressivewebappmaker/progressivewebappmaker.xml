@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER</name>
+    <creationDate>Jan 2020</creationDate>
+    <copyright>2020 ExtensionCoder</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>ExtensionCoder.com</author>
+    <authorEmail>developer@extensioncoder.com</authorEmail>
+    <authorUrl>https://www.extensioncoder.com</authorUrl>
+    <version>1.0.5</version>
+	<description>
+<![CDATA[
+<div style="padding:1%;background:#fff;color:#444;font-size:14px;text-align:center;border: 2px solid #444;">
+<p style="background: #444;">
+<img src="../plugins/system/progressivewebappmaker/assets/images/logo280.png">
+<h1 style="font-size:26px;color: #fff;background: #C7C71E;padding: 1%;margin-bottom: 0;">Progressive Web App Maker - Version 1.0.5</h1>
+</div>
+]]>
+</description>
+	<updateservers>
+		<server type="extension" priority="1" name="Progressive Web App Maker Plugin Update">http://www.extensioncoder.com/update_xml_folder/plg_system_progressivewebappmaker_update.xml</server>
+	</updateservers>	
+	<files>
+	   <filename plugin="progressivewebappmaker">progressivewebappmaker.php</filename>
+	   <filename>index.html</filename>
+	   <filename>manifest.json</filename>
+	   <folder>assets</folder>
+	  <folder>languages</folder>
+	</files>
+	<languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.plg_system_progressivewebappmaker.ini</language>
+<language tag="en-GB">en-GB/en-GB.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="de-DE">de-DE/de-DE.plg_system_progressivewebappmaker.ini</language>
+<language tag="de-DE">de-DE/de-DE.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="es-ES">es-ES/es-ES.plg_system_progressivewebappmaker.ini</language>
+<language tag="es-ES">es-ES/es-ES.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_system_progressivewebappmaker.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="pt-PT">pt-PT/pt-PT.plg_system_progressivewebappmaker.ini</language>
+<language tag="pt-PT">pt-PT/pt-PT.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="fr-FR">fr-FR/fr-FR.plg_system_progressivewebappmaker.ini</language>
+<language tag="fr-FR">fr-FR/fr-FR.plg_system_progressivewebappmaker.sys.ini</language>
+<language tag="tr-TR">tr-TR/tr-TR.plg_system_progressivewebappmaker.ini</language>
+<language tag="tr-TR">tr-TR/tr-TR.plg_system_progressivewebappmaker.sys.ini</language>
+	</languages>	
+	<config>
+      <fields name="params">
+        <!-- Basics -->
+		<fieldset name="basics" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_BASIC_SETTINGS">
+			<field name="manifestnote" type="note" class="alert alert-info" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_MAN_NOTE" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_MAN_NOTE_DESC"/>
+				<field name="customstart" type="list" default="0" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_CUSTOMSTART" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_CUSTOMSTART_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			<field showon="customstart:1" name="customstarturl" type="text" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_STARTURLCUSTOM" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_STARTURLCUSTOM_DESC"/>
+			<field name="name" type="text" required="required" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_DESC"/>
+			<field name="short_name" type="text" required="required" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_SNAME_LABEL"  description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_MANIFEST_SFORM_NAME_DESC"/>
+			<field name="theme_color" type="color" default="#3da9f2" required="required" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_THEME_COLOR_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_THEME_COLOR_DESC"/>
+			<field name="background_color" type="color" default="#fffff" required="required" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_BG_COLOR_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_BG_COLOR_DESC"/>
+		</fieldset>
+		<!-- App Icons -->
+		<fieldset name="icons" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_ICON_SETTINGS">
+			<field name="imagenote" type="note" class="alert alert-info" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_ADD_NOTE_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_ADD_NOTE"/>
+			<field name="image_512" type="media" directory="" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_512_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_512_DESC" />
+			<field name="image_192" type="media"  directory="" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_192_LABEL"  description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_IMAGE_192_DESC"/>
+				<field name="appletouchadd" type="list" default="0" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_ATADD" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_ATADD_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			<field showon="appletouchadd:1" name="touch_57" type="media"  directory="" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TOUCH_57_LABEL"  description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TOUCH_57_DESC"/>
+			<field showon="appletouchadd:1" name="touch_180" type="media"  directory="" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TOUCH_180_LABEL"  description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TOUCH_180_DESC"/>
+		</fieldset>
+		<!-- Transition Loader -->
+		<fieldset name="transitionloader" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_SETTINGS">
+			<field name="transnote" type="note" class="alert alert-info" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TRANSITION_NOTE_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_TRANSITION_NOTE_DESC"/>
+			<field name="pwaloader_enable" type="radio" default="0"  label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_ENABLE_LOADER_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_ENABLE_LOADER_DESC" class="btn-group btn-group-yesno radio" >
+	            <option value="0">PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_MANIFEST_NO</option>
+	            <option value="1">PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_MANIFEST_YES</option>
+	        </field>
+			<field name="pwaloader_type" type="radio" default="default" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_TYPE_LABEL"  description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_TYPE_DESC" showon="pwaloader_enable:1" class="btn-group btn-group-yesno radio">
+	            <option value="default">PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_DEFAULT</option>
+	            <option value="custom">PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_CUSTOM</option>
+	        </field>
+			<field name="wkpwaloader_color" type="color" default="#3da9f2" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_COLOR_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_COLOR_DESC" showon="pwaloader_enable:1[AND]pwaloader_type:default"  />
+			<field name="wkpwaloader_custom" type="media" default=""  label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_CUSTOM_IMAGE_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_LOADER_CUSTOM_IMAGE_DESC" showon="pwaloader_enable:1[AND]pwaloader_type:custom"/>
+        </fieldset>
+		<!-- Push Notificaiton -->
+		<fieldset name="pushnotification" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_PUSHNOT_SETTINGS">
+			<field name="pushnote" type="note" class="alert alert-info" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_NOTE_LABEL" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_NOTE_DESC" />
+			<field name="fcm_sender_id" type="text" default="482941778795" label="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_SENDER_ID" description="PLG_SYSTEM_PROGRESSIVEWEBAPPMAKER_SENDER_ID_YES" />
+        </fieldset>
+	  </fields>
+    </config>
+</extension>

@@ -1,0 +1,13 @@
+atoms:
+  -
+    id: assets-1484
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: 'gantry-assets://custom/scss/header-js.css', inline: '', extra: {  }, priority: '0', name: 'New item' }
+      javascript:
+        - { location: 'gantry-assets://custom/js/header.js', inline: '', in_footer: '1', extra: {  }, priority: '7', name: hs }
+        - { location: 'gantry-assets://custom/js/social-header.js', inline: '', in_footer: '0', extra: {  }, priority: '8', name: 'New item' }
+        - { location: 'gantry-assets://custom/js/toogle.js', inline: '', in_footer: '0', extra: {  }, priority: '9', name: 'New item' }

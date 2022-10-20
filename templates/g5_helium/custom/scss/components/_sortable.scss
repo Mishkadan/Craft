@@ -1,0 +1,33 @@
+.sortable {
+
+	$this: &;
+
+	&--ghost,
+	&--chosen,
+	&--selected,
+	&--drag,
+	&--ghost {
+
+		transition: .2s ease-in-out;
+		transition-property: background-color;
+
+	}
+
+	&--chosen {
+		background-color: hsl(209 30% 21% / .2) !important;
+	}
+
+	&--selected {
+		background-color: hsl(43 88% 56% / .4) !important;
+
+		& > *:not([class="filecont"]) {
+			pointer-events: none;
+			opacity: .5;
+		}
+	}
+
+	&--drag {
+		background-color: hsl(43 88% 56% / .4) !important;
+	}
+
+}

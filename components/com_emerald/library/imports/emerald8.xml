@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="file" method="upgrade">
+	<name>Emerald - Import - Emerald 8</name>
+	<author>MintJoomla</author>
+	<license>GPL GNU</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>http://www.mintjoomla.com</authorUrl>
+	<creationDate>July 2013</creationDate>
+	<copyright>(c) 2013 MintJoomla</copyright>
+	<version>10.1</version>
+	<description>Emerald import.</description>
+
+	<fileset>
+		<files target="components/com_emerald/library/imports">
+			<folder>emerald8</folder>
+		</files>
+		<files folder="emerald8" target="language/en-GB">
+			<filename>en-GB.com_emerald_import_emerald8.ini</filename>
+		</files>
+	</fileset>
+</extension>

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5.0"
+	client="site"
+	method="upgrade">
+	<name>Essential tags</name>
+	<author>Top Position</author>
+	<creationDate>November 2011</creationDate>
+	<copyright>GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@aixeena.org</authorEmail>
+	<authorUrl>www.aixeena.org</authorUrl>
+	<version>4.0.0</version>
+	<description>&lt;br/&gt;Select and display articles and news web ticker for Joomla 3</description>
+	<files>
+		<filename module="mod_aixeenaticker">mod_aixeenaticker.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>aixeenaticker.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>models</folder>
+	</files>
+	
+	<config>
+	
+		<fields name="params"  addfieldpath="/modules/mod_aixeenaticker/models/fields" >
+		
+		<!-- FIELDSET    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxx    MODULE    FIELDSET    xxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+			<fieldset name="basic">
+				<field type="aixeenaextras" path="/modules/mod_aixeenaticker/models/fields/" />		
+			</fieldset>
+			
+		<!-- FIELDSET    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxx    DATA  FIELDSET         xxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+			<fieldset name="data" label="&lt;span class=aixeena-glyphicon-export&gt;&lt;/span&gt; Data">
+		
+				<field name="note0001" type="note" class="aixeenah4" label="&lt;span class=&quot;0aixeena-glyphicon-filter&quot;&gt;&lt;/span&gt; Filter options" description="Use the following fields to create the articles filter, fields can be combined together." />
+					
+				<field
+					name="count"	
+					type="text"
+					default="5"
+					size = "5"
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Number of items to show" class="width40"
+					description="How many items do you want to display" />
+					
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Categories"
+					description="Select none, one or multiple categories" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+					
+				<field name="tags" size="30" type="tag" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Tags" custom="allow" description="JTAG_DESC" mode="ajax"  class="inputbox small"  multiple="true"  />	
+						
+				<field
+					name="show_featured"
+					 type="list"
+					default=""
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Featured Articles"
+					description="Show, hide or display only featured items">
+					<option
+						value="">JSHOW</option>
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">Only featured items</option>
+				</field>
+						
+				<field name="date_range" class="width50" type="text"  default="" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Date Range (in days)" description="Enter the number of days back of the items. For example 30 to get only the items of the last 30 days." />
+					
+				<field
+					name="user_id"
+					type="list"
+					default="0"
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Modified by filter" 
+					description="Display all, filter only my items, or all items not added or mofified for me">
+					<option
+						value="0">Anyone</option>
+					<option
+						value="by_me">Added or modified by me</option> 
+					<option
+						value="not_me">Not added or modified for me</option>
+				</field>
+					
+				<field
+					name="filterbyuser"
+					 type="radio"
+					class="btn-group span10"
+					default="0"
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Filter by user"
+					description="Enable or disable the user filter">
+					<option
+						value="1">Enabled</option>
+					<option
+						value="0">Disabled</option>
+				</field>
+				
+				<field name="fuser" type="user" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Select a user"  class="span10" />
+					
+				<field
+					name="filterbyusergroup"
+					 type="radio"
+					class="btn-group span10"
+					default="0"  
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt;  Filter by user group"
+					description="Enable or disable the group filter">
+					<option
+						value="1">Enabled</option>
+					<option
+						value="0">Disabled</option>
+				</field>
+					
+				<field name="usergroup" type="usergroup" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Select a user group" />
+			
+				<field name="n01" type="aixeenalabel" label="" />
+					
+				<field name="note0002" type="note" class="aixeenah4" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-sort&quot;&gt;&lt;/span&gt;  Ordering options" description="Use the following fields to set the articles order." />
+	
+				<field
+					name="ordering"
+					type="list"
+					default="published"
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Order" 
+					description="Select the ordering of the selected items">
+					<option
+						value="c_dsc">Recently Added</option>
+					<option
+						value="m_dsc">Recently Modified</option>
+					<option
+						value="p_dsc">Recently Published</option>
+					<option
+						value="popular">Most popular articles</option>	
+					<option
+						value="a.ordering">By article order</option>
+					<option
+						value="fp.ordering">By featured article order</option>	
+				</field>
+			
+				<field
+					name="ordering_direction"
+					 type="radio"
+					class="btn-group"
+					default="DESC"
+					label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Order direction"
+					description="Ordering direction">
+					<option
+						value="ASC">Ascendent</option>
+					<option
+						value="DESC">Descendent</option>
+				</field>
+				
+				
+				
+				
+				<field name="notel0023" type="note" class="alert alert-danger" label="Enable custom data list" description="If you want to display your own custom data items you must enable this option an enter in the next textarea the &lt; li &gt; items." />					
+					
+					<field name="customdatalist" type="list"
+						 default="0" label="Custom data list" description="">
+						<option value="0">Disabled</option>
+						<option value="1">Enabled</option>
+					</field>
+					
+					<field name="customdata" type="textarea" label="HTML list items" description="Enter your own  &lt;li&gt; items. Only HTML code, do not include any PHP here."  filter="raw" default="" />			
+					
+					
+<field name="notel002" type="note" class="alert alert-info" label="Select the ticker layout and ticker mode" description="" />
+			
+					<field
+						name="fixedmode"
+						type="radio"
+						class="btn-group"
+						default="default" label="Mode:" description="Select fixed to top, bottom or default mode.">
+						<option value="fixedtotop">Fixed to top</option>
+						<option value="default">Default</option>
+						<option value="fixedtobottom">Fixed to bottom</option>
+					</field>
+					
+					<field name="bodypadding" type="list"
+						 default="0" label="Body padding" description="">
+						<option value="0">Disabled</option>
+						<option value="1">Body padding top</option>
+						<option value="2">Body padding bottom</option>
+					</field>	
+					
+					<field name="bodypaddingpx"  type="text" size="3" default="80" 
+					label="Body padding (px)" description="For example 80" />
+					
+					<field name="template" type="list"
+						 default="white" label="Template:" description="Select a template to display the webticker">
+						<option value="blank">Blank</option>
+						<option value="white">White</option>
+						<option value="black">Black</option>
+						<option value="blue">Blue</option>
+						<option value="red">Red</option>
+						<option value="orange">Orange</option>
+						<option value="gray">Gray</option>
+						<option value="green">Green</option>
+						<option value="purple">Purple</option>
+						<option value="brown">Brown</option>
+				
+					</field>	
+				
+					<field name="travelocity" type="list"
+						 default="0.08" label="Scroll velocity:" description="Select the scroll velocity">
+						<option value="0.14">Very Quick</option>
+						<option value="0.11">Quick</option>
+						<option value="0.08">Normal</option>
+						<option value="0.06">Slow</option>
+						<option value="0.04">Very slow</option>
+					</field>	
+					
+					<field name="item_separator" type="text" default="" label="Item separator" 
+					description="" />
+					
+					
+					
+					
+<field name="note00444" type="note" class="alert alert-info" label="Webticker title" description="" />	
+					
+					<field name="moduletitle" type="list"
+						 default="0" label="Show webticker title" description="">
+						<option value="1">Enabled</option>
+						<option value="0">Disabled</option>
+					</field>
+					
+					<field name="webtickertitle" type="text" default="" label="Webticker title text" 
+					description="" />
+					
+					<field name="webtickertitle_link" type="text" default="" label="Webticker title link" description="Use relative url (/) or absolute urls with http" />
+	
+				
+					
+					
+				
+<field name="note004" type="note" class="alert alert-info" label="Common layout params" description="" />				
+				
+					<field name="module_background_color" type="color" 
+					description="Pick or write the title color, for example #ffffff. You can leave it empty." 
+					label="Module background color"/>
+					
+					<field name="module_height" type="text" size="8" default="" label="Module Height (px)" 
+					description="An integer value, for example 300. Leave empty for automatic height" />
+				
+					<field name="module_width"  type="text" size="8" default="" 
+					label="Module Width (px)" 
+					description="An integer value, for example 300. Leave empty for automatic height" />
+					
+					<field name="module_padding"  type="text" size="3" default="" 
+					label="Module padding (px)" description="For example 20" />
+					
+					<field name="module_margin"  type="text" size="3" default="" 
+					label="Module margin (px)" description="For example 10" />
+					
+				
+					
+					<field name="font_family" type="text"  default="" label="Font family" 
+					description="For example Arial" />
+					
+					<field name="font_size" type="text"  default="" label="Font size" 
+					description="For example 16px" />
+					
+					<field name="font_weight" type="text"  default="" label="Font weight" 
+					description="For example 400 or 700, normal or bold" />
+					
+					<field name="line_height" type="text"  default="" label="Line height" 
+					description="For example 18px" />
+					
+					<field name="module_text_color" type="color" 
+					description="Pick or write the title color, for example #ffffff. You can leave it empty." 
+					label="Text color"/>
+					
+					<field name="module_link_color" type="color" 
+					description="Pick or write the title color, for example #ffffff. You can leave it empty." 
+					label="Link color"/>
+					
+					<field name="module_link_decoration"  type="radio"
+					class="btn-group"  default="" label="Link decoration" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+					<field name="link_hover_color" type="color" 
+					description="Pick or write the title color, for example #ffffff. You can leave it empty." 
+					label="Link hover color"/>
+					
+					<field name="module_link_hover_decoration"  type="radio"
+					class="btn-group"  default="" label="Link hover decoration" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+					<field 
+					  name="backgroundimg"
+					  type="media"
+					  label="Background image"
+					  description=""
+					  class="inputbox"
+					  directory="images/" 
+					/>	
+				
+					<field name="item_padding" type="text" default="" class="span3" 
+					description="Without px suffix. Only integer values. 0 for no padding." 
+					label="Item padding (px)"/>
+					
+					<field name="ordering_items" type="text" class="span6" default="category, title, date, author" label="Avanced:item data order"  description="Order item category, title, date and author separated by coma, warning, for example: category, title, date, author." />	
+					
+					<field name="itemdatalayout"  type="radio"
+					class="btn-group"  default="vertical" label="Format item data layout" description="">
+						<option value="vertical">Vertical</option>
+						<option value="horizontal">Horizontal</option>
+					</field>
+					
+					
+					<field name="maskheight"  type="radio"
+					class="btn-group"  default="0" label="Mask custom height (for big formats)" description="">
+						<option value="1">Enabled</option>
+						<option value="0">Disabled</option>
+					</field>
+					
+					<field name="maskheightpx" type="text" default="30" class="span3" 
+					description="Without px suffix. Only integer values. 0 for no padding." 
+					label="Mask height (px)"/>
+					
+					
+					<field name="gradients"  type="radio"
+					class="btn-group"  default="1" label="Show gradient masks" description="">
+						<option value="1">Enabled</option>
+						<option value="0">Disabled</option>
+					</field>
+					
+					
+					
+	
+<field name="note006" type="note" class="alert alert-info" label="Item title options" description="" />		
+					
+					<field name="link_title"  type="radio"
+					class="btn-group"  default="1" label="Linked titles" description="">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+					
+					<field name="title_left_sep" type="text" class="span2" default="" 
+					label="Title left separator" description="" />
+					
+					<field name="title_right_sep" type="text" class="span2"  default="" 
+					label="Title right separator" description="" />
+				
+				
+					<field name="title_font_family" type="text"  default="" label="Title Font family" description="For example Arial" />
+					
+					<field name="title_font_size" type="text"  default="" label="Title Font size" description="For example 16px" />
+					
+					<field name="title_text_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Title Text color"/>
+					
+					<field name="title_link_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Title Link color"/>
+					
+					<field name="title_link_decoration"  type="radio"
+					class="btn-group"  default="" label="Urdeline link" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+					<field name="title_link_hover_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Title Link hover color"/>
+					
+					<field name="title_link_hover_decoration"  type="radio"
+					class="btn-group"  default="" label="Urdeline hover link" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+				
+		
+		
+				<field name="note0075" type="note" class="" label="" description="" />		
+		
+				<field name="notel008" type="note" class="alert alert-info" label="Author options" description="Set here the item author parameters." />
+				
+				
+					<field name="show_aut"  type="radio" class="btn-group"  default="0" label="Show author" description="">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+					
+					<field name="link_aut"  type="radio"
+					class="btn-group"  default="0" label="Link author (Contact component)" description="">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+					
+					<field name="pre_aut"  type="radio"
+					class="btn-group"  default="1" label="Show Written by" description="">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</field>
+					
+					<field name="author_left_sep" type="text" class="span2" default="" 
+					label="Author left separator" description="" />
+					
+					<field name="author_right_sep" type="text" class="span2"  default="" 
+					label="Author right separator" description="" />
+									
+					<field name="pre_aut_text" class="span2" type="text"  default="" label="Written by custom text" description="" />
+								
+					<field name="author_font_family" type="text"  default="" label="Author Font family" description="For example Arial" />
+					
+					<field name="author_font_size" type="text"  default="" label="Author Font size" description="For example 16px" />
+					
+					<field name="author_line_height" type="text"  default="" label="Author Line height" description="For example 18px" />
+					
+					<field name="author_text_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Author Text color"/>
+					
+					<field name="author_link_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Author Link color"/>
+					
+					<field name="author_link_decoration"  type="radio"
+					class="btn-group"  default="" label="Urdeline link" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+					<field name="author_link_hover_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Author Link hover color"/>
+					
+					<field name="author_link_hover_decoration"  type="radio"
+					class="btn-group"  default="" label="Urdeline hover link" description="">
+						<option value="">Default</option>
+						<option value="underline">Underline</option>
+						<option value="none">None</option>
+					</field>
+					
+					
+
+	
+				<field name="notel6" type="note" class="alert alert-info" label="Category options" description="" />
+
+
+				<field name="show_header"  type="radio"
+				class="btn-group"  default="1" label="Show category" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="link_header"  type="radio"
+				class="btn-group"  default="1" label="Linked category" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="category_left_sep" type="text" class="span2" default="" 
+					label="category left separator" description="" />
+					
+					<field name="category_right_sep" type="text" class="span2"  default="" 
+					label="category right separator" description="" />
+								
+				<field name="category_font_family" type="text"  default="" label="Category Font family" description="For example Arial" />
+				
+				<field name="category_font_size" type="text"  default="" label="Category Font size" description="For example 16px" />
+				
+				<field name="category_line_height" type="text"  default="" label="Category Line height" description="For example 18px" />
+				
+				<field name="category_text_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Category Text color"/>
+				
+				<field name="category_link_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Category Link color"/>
+				
+				<field name="category_link_decoration"  type="radio"
+				class="btn-group"  default="" label="Urdeline link" description="">
+					<option value="">Default</option>
+					<option value="underline">Underline</option>
+					<option value="none">None</option>
+				</field>
+				
+				<field name="category_link_hover_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Category Link hover color"/>
+				
+				<field name="category_link_hover_decoration"  type="radio"
+				class="btn-group"  default="" label="Urdeline hover link" description="">
+					<option value="">Default</option>
+					<option value="underline">Underline</option>
+					<option value="none">None</option>
+				</field>
+				
+				
+
+	
+				<field name="notel7" type="note" class="alert alert-info" label="Date options" description="" />
+	
+				<field name="show_date"  type="radio"
+				class="btn-group"  default="1" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Show date" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="date_format"  type="list"
+				class="btn-group"  default="DATE_FORMAT_LC3" label="&lt;span class=&quot;aixeena-glyphicon aixeena-glyphicon-asterisk&quot;&gt;&lt;/span&gt; Date format" description="">
+					<option value="DATE_FORMAT_LC3">d F Y</option>
+					<option value="DATE_FORMAT_LC1">l, d F Y</option>
+					<option value="DATE_FORMAT_LC2">l, d F Y H:i</option>
+					<option value="DATE_FORMAT_LC1">DATE_FORMAT_LC1</option>
+					<option value="DATE_FORMAT_LC">l, d F Y</option>
+					<option value="DATE_FORMAT_LC4">Y-m-d</option>
+					<option value="DATE_FORMAT_JS1">y-m-d</option>
+				</field>
+				
+				<field name="date_left_sep" type="text" class="span2" default="" 
+					label="date left separator" description="" />
+					
+				<field name="date_right_sep" type="text" class="span2"  default="" 
+					label="date right separator" description="" />
+									
+				<field name="date_font_family" type="text"  default="" label="Date Font family" description="For example Arial" />
+				
+				<field name="date_font_size" type="text"  default="" label="Date Font size" description="For example 16px" />
+				
+				<field name="date_line_height" type="text"  default="" label="Date Line height" description="For example 18px" />
+				
+				<field name="date_text_color" type="color" description="Pick or write the title color, for example #ffffff. You can leave it empty." label="Date Text color"/>
+				
+						
+	
+				<field name="noteb4" type="note" class="alert alert-info" label="More news link" description="Enable and configure the sMore news link or button." />		
+				
+				
+				<field name="show_more" type="radio"
+				class="btn-group"  default="0" label="Show more news Link/button" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>	
+				<field name="more_text" type="text" default="More news" label="More news text" description="" />
+				<field name="more_link" type="text" default="" label="More news link" description="Use relative url (/) or absolute urls with http" />
+	
+				
+				
+			
+				
+					
+				<field name="n02" type="aixeenalabel" label="" />
+				<field name="retorno6" type="aixeenalabel" label="" />
+		
+		</fieldset>
+
+	
+	<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- xxxxxx avanced fieldset xxxxxxx -->
+	<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->	
+			
+	<fieldset name="advanced" label="&lt;span class=aixeena-glyphicon-cog&gt;&lt;/span&gt; Avanced">
+
+		<field
+			name="layout"
+			default="simple"
+			type="modulelayout"
+			label="JFIELD_ALT_LAYOUT_LABEL"
+			description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+		
+		<field
+			name="moduleclass_sfx"
+			type="text"
+			label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+			description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		
+		<field
+			name="cache"
+			type="list"
+			default="1"
+			label="COM_MODULES_FIELD_CACHING_LABEL"
+			description="COM_MODULES_FIELD_CACHING_DESC">
+			<option
+			value="1">JGLOBAL_USE_GLOBAL</option>
+			<option
+			value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		
+		<field
+			name="cache_time"
+			type="text"
+			default="900"
+			label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+			description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		
+		<field
+			name="cachemode"
+			type="hidden"
+			default="static">
+			<option
+			value="static"></option>
+		</field>
+		
+		<field name="conf004" type="aixeenalabel" label="" />
+		
+		<field name="tptext" type="hidden" default="selección de talento digital" />
+		<field name="tplink"  type="hidden" default="https://selectaselecciontalento.com/" />
+		<field name="tpalt"  type="hidden" default="selección de talento digital" />
+		
+	</fieldset>
+
+		</fields>
+	</config>
+</extension>	

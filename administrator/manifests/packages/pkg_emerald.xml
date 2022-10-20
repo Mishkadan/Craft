@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>Emerald - Package - Core</name>
+	<packagename>emerald</packagename>
+	<version>10.107</version>
+	<url>http://www.mintjoomla.com</url>
+	<packager>MintJoomla</packager>
+	<packagerurl>http://www.mintjoomla.com</packagerurl>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<description><![CDATA[
+		<div class="hero-unit" style="text-align: left;">
+			<h1>Emerald 10 Membership <small><b>Mint</b>Joomla</small></h1>
+			<p>Emerald is a great, very mature membership extension.</p>
+		</div>
+		<div class="well" style="text-align:left;">
+			<h2>You have successfully installed emerald package!</h2>
+			<ul>
+				<li>Emerald 10 Extension</li>
+			</ul>
+			<ul>
+				<li>Payment Gateway - Offline</li>
+			</ul>
+			<ul>
+				<li>Plugin System - Restricter</li>
+				<li>Plugin User - Granter</li>
+				<li>Plugin Content - Cleaner</li>
+			</ul>
+			<ul>
+				<li>Rule - Universal</li>
+			</ul>
+		</div>
+		<div class="alert alert-info">Please read <a href="http://docs.mintjoomla.com/en/emerald/emerald-quick-start" target="_blank">Quick Start</a> tutorial.</div>
+		<div class="alert alert-error">Please do not forget to enable (publish) all Emerald plugins</div>
+	]]></description>
+
+	<files folder="package">
+		<file type="component" id="com_emerald">com_emerald.j3.v.10.107.zip</file>
+		<file type="library" id="mint">pkg_mint.j3.libraries.v.9.30.zip</file>
+		<file type="file" id="mint">action_emerald.j3.alert.v.9.13.zip</file>
+		<file type="file" id="mint">field_emerald.j3.note.v.10.4.zip</file>
+		<file type="file" id="mint">import_emerald.j3.aec.v.9.9.zip</file>
+		<file type="file" id="mint">import_emerald.j3.akeebasubs.v.9.2.zip</file>
+		<file type="file" id="mint">import_emerald.j3.emerald8.v.10.1.zip</file>
+		<file type="file" id="mint">import_emerald.j3.emerald8.v.9.13.zip</file>
+		<file type="file" id="mint">import_emerald.j3.osemembership.v.9.11.zip</file>
+		<file type="file" id="mint">import_emerald.j3.osmember.v.10.1.zip</file>
+		<file type="file" id="mint">import_emerald.j3.osmember.v.9.4.zip</file>
+		<file type="file" id="mint">rule_emerald.j3.default.v.10.4.zip</file>
+		<file type="plugin" id="emerald">plg_emerald.content.emerald.j3.v.10.6.zip</file>
+		<file type="plugin" id="emerald">plg_emerald.hikashop.emerald.j3.v.9.14.zip</file>
+		<file type="plugin" id="emerald">plg_emerald.search.emerald.j3.v.10.1.zip</file>
+		<file type="plugin" id="emerald">plg_emerald.system.emerald.j3.v.10.20.zip</file>
+		<file type="plugin" id="emerald">plg_emerald.user.emerald.j3.v.10.7.zip</file>
+		<file type="file" id="mint">gateways_emerald.j3.offline.v.10.3.zip</file>
+	</files>
+</extension>

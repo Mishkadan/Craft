@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/* CSS Document */
+.dir-rtl .aixeena_webticker_content ul.newsticker li {
+	float: right;
+}

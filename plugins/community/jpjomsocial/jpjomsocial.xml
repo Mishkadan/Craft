@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="community" method="upgrade">
+	<name>пуш в jomsocial</name>
+	<author>Weppsol</author>
+	<creationDate>2022</creationDate>
+	<copyright>Copyright (C) 2022 CRAFT. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail></authorEmail>
+	<authorUrl>https://craft.ru.net</authorUrl>
+	<version>1.0.1</version>
+	<isapplication>false</isapplication>
+	<description>Внедряем пуш в jomsocial</description>
+	<languages folder="language">
+        <language tag="en-GB">en-GB.plg_community_jpjomsocial.ini</language>
+        <language tag="en-GB">en-GB.plg_community_jpjomsocial.sys.ini</language>
+    </languages>
+	<files>
+   		<filename plugin="jpjomsocial">jpjomsocial.php</filename>
+	</files>
+	<updateservers>
+	<server type="plugin" priority="1" name="JoomPush JomSocial Web Push Notifications">
+		<![CDATA[
+		https://weppsol.com/index.php?option=com_rdsubs&view=updater&format=xml&element=joompush-jomsocial&type=plugin
+		]]>
+	</server>
+	</updateservers>
+</extension>

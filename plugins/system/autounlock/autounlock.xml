@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_AUTOUNLOCK</name>
+	<author>HjET WD</author>
+	<creationDate>2022</creationDate>
+	<copyright>(C) 2022 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>wd@hyper-jet.ru</authorEmail>
+	<authorUrl>wd.hyper-jet.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_AUTOUNLOCK_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="autounlock">autounlock.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="ru-RU">ru-RU.plg_system_autounlock.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_autounlock.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="time_max"
+					type="list"
+					label="PLG_AUTOUNLOCK_FIELD_MAXTIME_LABEL"
+					description="PLG_AUTOUNLOCK_FIELD_MAXTIME_DESC"
+					filter="integer"
+					default="24"
+				>
+					<option value="1">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_1</option>
+					<option value="2">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_2</option>
+					<option value="3">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_3</option>
+					<option value="6">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_6</option>
+					<option value="12">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_12</option>
+					<option value="24">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_24</option>
+					<option value="36">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_36</option>
+					<option value="48">PLG_AUTOUNLOCK_FIELD_MAXTIME_OPTION_48</option>
+				</field>
+
+				<field
+					name="area"
+					type="radio"
+					label="PLG_AUTOUNLOCK_FIELD_AREA_LABEL"
+					description="PLG_AUTOUNLOCK_FIELD_AREA_DESC"
+					class="btn-group"
+					default="administrator"
+					>
+					<option value="administrator">PLG_AUTOUNLOCK_FIELD_AREA_OPTION_ADMINISTRATOR</option>
+					<option value="site">PLG_AUTOUNLOCK_FIELD_AREA_OPTION_SITE</option>
+					<option value="both">PLG_AUTOUNLOCK_FIELD_AREA_OPTION_BOTH</option>
+				</field>
+
+				<field
+					name="usergroups"
+					type="usergrouplist"
+					label="PLG_AUTOUNLOCK_FIELD_USERGROUPS_LABEL"
+					description="PLG_AUTOUNLOCK_FIELD_USERGROUPS_DESC"
+					multiple="true"
+					default=""
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

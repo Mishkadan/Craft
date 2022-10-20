@@ -1,0 +1,15 @@
+div.jpcontent {
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+div.jpcontent table tr td {
+    margin: 1px !important;
+    padding: 2px !important;
+}
+div.jpcontent table tr.row0  {
+    background-color:#efefef;
+}
+div.jpcontent table tr.row1 {
+    background-color:#ffffff;
+}

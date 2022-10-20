@@ -1,0 +1,44 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Henerala Ostryakova Street",
+               "short_name" : "Henerala Ostryakova St",
+               "types" : [ "route" ]
+            }
+         ],
+         "formatted_address" : "Henerala Ostryakova St",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 44.3993231,
+                  "lng" : 33.9463836
+               },
+               "southwest" : {
+                  "lat" : 44.39675769999999,
+                  "lng" : 33.9435503
+               }
+            },
+            "location" : {
+               "lat" : 44.3976612,
+               "lng" : 33.9450572
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 44.3993893802915,
+                  "lng" : 33.9463836
+               },
+               "southwest" : {
+                  "lat" : 44.3966914197085,
+                  "lng" : 33.9435503
+               }
+            }
+         },
+         "place_id" : "ChIJm3GrWirClEARqNgdIztGRuo",
+         "types" : [ "route" ]
+      }
+   ],
+   "status" : "OK"
+}

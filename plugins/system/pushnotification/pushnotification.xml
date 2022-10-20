@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_PUSHNOTIFICATION</name>
+    <creationDate>Jan 2020</creationDate>
+    <copyright>2020 ExtensionCoder</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>ExtensionCoder.com</author>
+    <authorEmail>developer@extensioncoder.com</authorEmail>
+    <authorUrl>https://www.extensioncoder.com</authorUrl>
+    <version>1.0.2</version>
+	<description>
+<![CDATA[
+<div style="padding:1%;background:#fff;color:#444;font-size:14px;text-align:center;border: 2px solid #444;">
+<p style="background: #444;">
+<img src="../plugins/system/pushnotification/assets/images/logo280.png">
+<h1 style="font-size:26px;color: #fff;background: #C7C71E;padding: 1%;margin-bottom: 0;">Push Notification - Version 1.0.2</h1>
+</div>
+]]>	
+	</description>
+    <files>
+        <filename plugin="pushnotification">pushnotification.php</filename>
+        <filename>index.html</filename>	
+		<folder>languages</folder>
+		<folder>assets</folder>
+    </files>
+	<languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.plg_system_pushnotification.ini</language>
+<language tag="en-GB">en-GB/en-GB.plg_system_pushnotification.sys.ini</language>
+<language tag="de-DE">de-DE/de-DE.plg_system_pushnotification.ini</language>
+<language tag="de-DE">de-DE/de-DE.plg_system_pushnotification.sys.ini</language>
+<language tag="tr-TR">tr-TR/tr-TR.plg_system_pushnotification.ini</language>
+<language tag="tr-TR">tr-TR/tr-TR.plg_system_pushnotification.sys.ini</language>
+<language tag="fr-FR">fr-FR/fr-FR.plg_system_pushnotification.ini</language>
+<language tag="fr-FR">fr-FR/fr-FR.plg_system_pushnotification.sys.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_system_pushnotification.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_system_pushnotification.sys.ini</language>
+<language tag="pt-PT">pt-PT/pt-PT.plg_system_pushnotification.ini</language>
+<language tag="pt-PT">pt-PT/pt-PT.plg_system_pushnotification.sys.ini</language>
+<language tag="es-ES">es-ES/es-ES.plg_system_pushnotification.ini</language>
+<language tag="es-ES">es-ES/es-ES.plg_system_pushnotification.sys.ini</language>
+		</languages>
+	<updateservers>
+		<server type="extension" priority="1" name="Push Notification Plugin Update">http://www.extensioncoder.com/update_xml_folder/plg_system_pushnotification_update.xml</server>
+	</updateservers>	
+    <config>
+        <fields name="params">
+			<fieldset name="psettings" label="PLG_SYSTEM_PUSHNOTIFICATION_FIELDSETLABEL_PSETTINGS">
+					<field name="selecthttp" type="list" default="http" label="PLG_SYSTEM_PUSHNOTIFICATION_FIELD_SELECTHTTP" description="PLG_SYSTEM_PUSHNOTIFICATION_FIELD_SELECTHTTP_DESC">
+						<option value="https">PLG_SYSTEM_PUSHNOTIFICATION_HTTPS</option>
+						<option value="http">PLG_SYSTEM_PUSHNOTIFICATION_HTTP</option>
+					</field>
+					<field showon="selecthttp:https" name="manifestnote" type="note" class="alert alert-success" label="PLG_SYSTEM_PUSHNOTIFICATION_MNOTE" description="PLG_SYSTEM_PUSHNOTIFICATION_MNOTE_DESC" />
+					<field name="appid" type="textarea" rows="4" cols="30" maxlength="1000" default="" label="PLG_SYSTEM_PUSHNOTIFICATION_FIELD_APPID" description="PLG_SYSTEM_PUSHNOTIFICATION_FIELD_APPID_DESC" />
+			</fieldset>
+        </fields>
+    </config>
+</extension>

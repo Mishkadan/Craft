@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+    <name>Emerald - Content Helper</name>
+    <author>MintJoomla</author>
+    <creationDate>November 2011</creationDate>
+    <copyright><![CDATA[ (c) 2012 MintJoomla]]></copyright>
+    <license>GPL GNU</license>
+    <authorEmail>support@mintjoomla.com</authorEmail>
+    <authorUrl>http://www.mintjoomla.com</authorUrl>
+	<version>10.6</version>
+    <description>EMR_CONTENT_HELPER_DESCR</description>
+    <files>
+        <filename plugin="emerald">emerald.php</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_emerald.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_emerald.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="general" label="EMR_GENERAL">
+                <field name="mark" type="radio" class="btn-group" default="1" label="EMR_MARK_SUBSCRIBED"
+                       description="EMR_MARK_SUBSCRIBED_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="link" type="radio" class="btn-group" default="1"
+                       label="EMR_MARK_AS_LINK" description="">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="mark_type" type="list" default="2" label="EMR_WHERE_SIGN" description="EMR_WHERE_SIGN_DESCR">
+                    <option value="2">EMR_WHERE_SIGN_BEFORE</option>
+                    <option value="3">EMR_WHERE_SIGN_AFTER</option>
+                </field>
+                <field name="pic" type="text" default="components/com_emerald/images/sign.gif" label="EMR_SIGN_PICTRE" description="EMR_SIGN_PICTRE_DESCR"/>
+                <field name="pic_subscr" type="text" default="" label="EMR_SIGN_PICTRE_FRO_SUBSCRIBED" description="EMR_SIGN_PICTRE_FRO_SUBSCRIBED_DESCR"/>
+                <field name="pic_subscr_text" type="text" default="" label="EMR_TEXT_AFTER_IMAGE" description="EMR_TEXT_AFTER_IMAGE_DESCR"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

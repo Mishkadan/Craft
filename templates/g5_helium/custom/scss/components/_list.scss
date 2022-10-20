@@ -1,0 +1,38 @@
+.list {
+	// * добавить !important для перебивки предыдущих стилей
+	// * используется так - #{if($important, ' !important', '')}
+	$important: true;
+
+	$this: &;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1em;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	&__item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: .5em;
+	}
+
+	&__icon {
+		width: 1em;
+		height: 1em;
+
+		font-size: 20px;
+		color: hsl(44 72% 52%);
+
+		pointer-events: none;
+	}
+
+	&__title {}
+
+}

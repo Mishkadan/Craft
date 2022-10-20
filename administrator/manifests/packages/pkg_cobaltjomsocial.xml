@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0">
+	<name>Cobalt - Package - All</name>
+	<packagename>cobaltjomsocial</packagename>
+	<version>8.64</version>
+	<url>http://www.mintjoomla.com</url>
+	<packager>MintJoomla</packager>
+	<packagerurl>http://www.mintjoomla.com</packagerurl>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<description><![CDATA[
+		<div class="hero-unit" style="text-align: left;">
+			<h1>Cobalt 8 CCK <small><b>Jom</b>Social</small></h1>
+			<p>Complete JomSocial integration for Cobalt 8 CCK.
+		</div>
+		<div class="alert alert-warning">Do not forget to publish all plugins</div>
+		<div class="well" style="text-align:left;">
+			<h2>You have successfully installed!</h2>
+			<ul>
+				<li>9 JoomSocial profile plugins to show Coablt content in user profile and toolbar menu.</li>
+				<li>1 Coablt event integration plugin to integrate karma and activity.</li>
+			</ul>
+			<h2>Cobalt 8 Built-in!</h2>
+			<p>You have already built-in to Coablt avatar, message, online status and link to profile integration for free.
+		</div>
+		<br><br>
+	]]></description>
+
+	<files folder="package">
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt1.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt2.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt3.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt4.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt5.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt6.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt7.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt8.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt9.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt10.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt11.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt12.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt13.v.8.64.zip</file>
+		<file type="plugin" id="community">plg_cobalt.j3.community.cobalt14.v.8.64.zip</file>
+		<file type="plugin" id="mint">plg_interagtion.mint.jomsocial.j3.v.8.64.zip</file>
+	</files>
+</extension>

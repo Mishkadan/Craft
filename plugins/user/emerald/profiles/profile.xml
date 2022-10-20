@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="emerald">
+		<fieldset name="emerald" addfieldpath="/plugins/user/emerald/fields">
+			<field name="subscrplans" type="subscrplans" id="subscrplans" label="PLG_USER_SUSCRPLANS_FIELD"/>
+		</fieldset>
+	</fields>
+</form>

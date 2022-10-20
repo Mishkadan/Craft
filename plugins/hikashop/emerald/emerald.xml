@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="hikashop" method="upgrade">
+	<name>Hikashop Emerald Membership Integration</name>
+	<creationDate>Dec 2013</creationDate>
+	<author>MintJoomla</author>
+	<copyright><![CDATA[ (c) 2012 MintJoomla]]></copyright>
+	<license>GPL GNU</license>
+	<authorEmail>support@mintjoomla.com</authorEmail>
+	<authorUrl>http://www.mintjoomla.com</authorUrl>
+	<version>9.14</version>
+	<description><![CDATA[
+			This plugin assign new subscritpion to the user on product purchased according to plan Hikashop action settings
+			]]></description>
+
+	<files>
+		<filename plugin="emerald">emerald.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="auto" type="list" default="1" label="Automatically publish subscription with 0.00 price">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<scriptfile>script.php</scriptfile>
+</extension>

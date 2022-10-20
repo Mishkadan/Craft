@@ -1,0 +1,113 @@
+.icon {
+
+	// * добавить !important для перебивки предыдущих стилей
+	// * используется так - #{if($important, ' !important', '')}
+	$important: true;
+
+    $this: &;
+
+    // min-width: 1em#{if($important, ' !important', '')};
+	// max-width: 1em#{if($important, ' !important', '')};
+    // min-height: 2em#{if($important, ' !important', '')};
+	// max-height: 2em#{if($important, ' !important', '')};
+	margin: 0#{if($important, ' !important', '')};
+	padding: 0#{if($important, ' !important', '')};
+    aspect-ratio: 1;
+    object-fit: contain;
+
+    fill: currentColor;
+
+    &__bell {
+
+        & > use {
+            opacity: 0;
+
+            transition: .25s ease-in-out;
+            transition-property: opacity;
+        }
+
+        & > use[href="#ui__bell"] {
+            opacity: 1;
+        }
+
+        &--fill {
+            & > use[href="#ui__bell-fill"] {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__loading {
+
+        & > use:not([href="#ui__loading"]) {
+            opacity: 0 !important;
+        }
+        & > use[href="#ui__loading"] {
+            transform-origin: center;
+            opacity: 1 !important;
+            animation: spin 5s infinite linear;
+        }
+    }
+
+}
+
+// TODO: вынести в отдельный файл со всеми анимациями
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+// TODO: понять и простить... а лучше переделать =)
+.tmp__button {
+
+    &--follow {
+
+        display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: .5em;
+		height: 2em;
+        transition: .25s ease-in-out;
+        transition-property: outline-color;
+
+		@media (max-width: 979px) {
+			& .icon {
+				display: none;
+			}
+		}
+
+		&__title {
+			padding: .2em .4em;
+		}
+
+        &,
+        &:active,
+        &:focus,
+        &:hover {
+            border: 0;
+            border-radius: 0;
+            background-color: unset;
+            padding: 0;
+            margin: 0;
+            color: #253544;
+            outline: none;
+        }
+
+        &:not(:disabled) {
+            @media (hover: hover) {
+                outline: 1px solid transparent;
+                outline-offset: -1px;
+
+                &:focus-visible {
+                    outline-color: #253544;
+                }
+            }
+        }
+    }
+
+}

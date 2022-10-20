@@ -1,0 +1,48 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "9",
+               "short_name" : "9",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Henerala Ostryakova Street",
+               "short_name" : "Henerala Ostryakova St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Opolzneve",
+               "short_name" : "Opolzneve",
+               "types" : [ "locality", "political" ]
+            }
+         ],
+         "formatted_address" : "Henerala Ostryakova St, 9, Opolzneve",
+         "geometry" : {
+            "location" : {
+               "lat" : 44.3969251,
+               "lng" : 33.93962570000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 44.3980924802915,
+                  "lng" : 33.9413134302915
+               },
+               "southwest" : {
+                  "lat" : 44.3953945197085,
+                  "lng" : 33.9386154697085
+               }
+            }
+         },
+         "place_id" : "ChIJEa4QQynClEARQGaDp91Mk0Y",
+         "plus_code" : {
+            "compound_code" : "9WWQ+QV Opolzneve",
+            "global_code" : "8GPM9WWQ+QV"
+         },
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.aixwebtick-white { 
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: auto;
+	width:auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color:#FFFFFF;
+
+}
+
+.aixwebtick-white .maks2-title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color:#fff;
+	padding-right:15px;
+	font-weight:bold;
+}
+
+.aixwebtick-white .mask2-more {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-left:15px;
+	background-color:#fff;
+}
+
+
+.aixwebtick-white a {
+	color:#006699;
+	text-decoration:none;
+}
+.aixwebtick-white a:hover {
+	color:#990000;
+	text-decoration:underline;
+}
+
+.tickercontainer .mask { 
+	position: relative;
+	top: 0px;
+	height: auto;
+	overflow: hidden;
+}
+
+.aixwebtick-white ul.newsticker {
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	}
+.aixwebtick-white ul.newsticker li {
+	float: left;
+	margin: 0;
+	padding:0;
+	list-style-type:none;
+	padding-right: 15px;
+	visibility:hidden;
+}
+
+
+
+.aixwebtick-white ul.newsticker.itemdatalayout-vertical li div{
+	float: left;
+	margin-right: 7px;
+}
+
+.aixwebtick-white .maks2-right {
+	
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: -2px;	
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+	}
+	
+.aixwebtick-white .maks2-left {
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: -2px;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+	}

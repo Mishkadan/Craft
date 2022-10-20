@@ -1,0 +1,166 @@
+<?php
+/**
+ * Cobalt by MintJoomla
+ * a component for Joomla! 1.7 - 2.5 CMS (http://www.joomla.org)
+ * Author Website: http://www.mintjoomla.com/
+ * @copyright Copyright (C) 2012 MintJoomla (http://www.mintjoomla.com). All rights reserved.
+ * @license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ */
+defined('_JEXEC') or die();
+$doc = JFactory::getDocument();
+$directory = $this->directory;
+$jinput = JFactory::getApplication()->input;
+$viewName = $jinput->get('view');
+$taskName = $jinput->get('task');
+$db = JFactory::getDBO();
+$sql = "SELECT id, name, userid, avatar, thumb FROM #__users, #__community_users WHERE id = userid";
+$db->setQuery($sql);
+$list = $db->loadObjectList();
+$valueq = $this->value;
+?>
+
+<ul id="chosen-u" class="joms-list--friend chosen" >
+<?php foreach($list as $user) {
+	 $link = CRoute::_('index.php?option=com_community&view=profile&userid='.$user->userid);?>
+	 	 
+	 <li class="joms-list__item craft">
+	  <input onclick = "alert1(this); return myfun2(this)" style="display:" type="checkbox" class="myCheckbox2" id="user-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-name-<?php echo $user->id; ?>]" 
+     value= "<?php echo (isset($this->value['user-name-'. $user->id]) ? stripslashes($this->value['user-name-'. $user->id]) : '');?>"
+	 <?php echo (!isset($this->value['user-name-'. $user->id]) ? stripslashes($this->value['user-name-'. $user->id]) : 'checked="checked"');?>>
+	 
+   <input  style="display:none" type ="checkbox" class="myCheckbox" id="user-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-thumb-<?php echo $user->id; ?>]" 
+     value= "<?php echo (isset($this->value['user-thumb-'. $user->id]) ? stripslashes($this->value['user-thumb-'. $user->id]) : '');?>"
+	 <?php echo (!isset($this->value['user-name-'. $user->id]) ? stripslashes($this->value['user-name-'. $user->id]) : 'checked="checked"');?>>
+	 
+     <input  style="display:none" type ="checkbox" class="myCheckbox" id="user-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-link-<?php echo $user->id; ?>]" 
+     value= "<?php echo (isset($this->value['user-link-'. $user->id]) ? stripslashes($this->value['user-link-'. $user->id]) : '');?>"
+	 <?php echo (!isset($this->value['user-name-'. $user->id]) ? stripslashes($this->value['user-name-'. $user->id]) : 'checked="checked"');?>>
+    
+	  <!-- avatarka :) -->
+     <div class="joms-list__avatar joms-avatar  craft">
+	  <?php if (isset($user->thumb) && !empty($user->thumb)){?>
+       <img  src="<?php echo $user->thumb; ?>" title="<?php echo $user->name; ?>" alt="<?php echo $user->name; ?>" data-author="<?php echo $user->userid; ?>" />
+	  <?} else { ?>
+	  <img src="/components/com_community/assets/user-Male-thumb.png" title="<?php echo $user->name; ?>" alt="<?php echo $user->name; ?>" data-author="<?php echo $user->userid; ?>">
+      <?}?>
+	 </div>
+       <div class="joms-list__body craft">
+         <!-- name -->
+         <h4 class="joms-text--username craft"><?php echo $user->name; ?></h4>
+      </div>
+	
+	 </li>
+  <?php } ?>
+  </ul>
+  
+<button onclick="searchdrop(); return false" id="btbtn" class="button-full">Выбрать пользователей</button>
+ <input type="text" placeholder="Поиск.." id="s-craft-s" onkeyup="filterFunction()">
+  <ul id="u-chose"class="joms-list--friend craft" style="display:none" >
+  <?php foreach($list as $user) {
+	 $link = CRoute::_('index.php?option=com_community&view=profile&userid='.$user->userid);?>	 
+  <li onclick = "return myfun(this)" class="joms-list__item craft" <?php echo (!isset($this->value['user-name-'. $user->id]) ? stripslashes($this->value['user-name-'. $user->id]) : 'style="display:none"');?>>
+   <input style="display:none" type ="checkbox" class="myCheckbox" id="user-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-thumb-<?php echo $user->id; ?>]" value= "<?php echo $user->thumb?>">   
+   <input style="display:none" type="checkbox" class="myCheckbox2" id="user-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-name-<?php echo $user->id; ?>]" value= "<?php echo $user->name?>">
+   <input style="display:none" type="checkbox" class="myCheckbox" id="user-link-<?php echo $user->userid; ?>" name="jform[fields][<?php echo $this->id;?>][user-link-<?php echo $user->id; ?>]" value= "<?php echo $link ?>">
+   <!-- avatarka :) -->
+     <div class="joms-list__avatar joms-avatar  craft">
+	  <?php if (isset($user->thumb) && !empty($user->thumb)){?>
+       <img  src="<?php echo $user->thumb; ?>" title="<?php echo $user->name; ?>" alt="<?php echo $user->name; ?>" data-author="<?php echo $user->userid; ?>" />
+	  <?} else { ?>
+	  <img src="/components/com_community/assets/user-Male-thumb.png" title="<?php echo $user->name; ?>" alt="<?php echo $user->name; ?>" data-author="<?php echo $user->userid; ?>">
+      <?}?>
+	 </div>
+       <div class="joms-list__body craft">
+         <!-- name -->
+         <h4 class="joms-text--username craft"><?php echo $user->name; ?></h4>
+      </div>
+  </li>
+  <?php } ?>
+ </ul>
+
+<script type="text/javascript"> 
+function myfun(element) { // Выбор юзеров, скрытие и копирование их вверх вниз
+var inputs = element.getElementsByTagName('input');
+    for(var i = 0, inputs_len = inputs.length; i < inputs_len; i++) {
+        inputs[i].checked = inputs[i].checked ? false : true;
+		/***if (inputs[i].checked) {
+		element.classList.add('chosen-us');
+		} else {
+		element.classList.remove('chosen-us');
+		}***/
+    }
+	 if (element.parentNode == document.querySelector("#u-chose")) {
+	 document.querySelector("#chosen-u").appendChild(element);
+	 }
+	 else {
+		 for(var i = 0, inputs_len = inputs.length; i < inputs_len; i++) {
+		 inputs[i].checked = inputs[i].checked ? false : true;}
+	 document.querySelector("#u-chose").prepend(element);
+	 }
+}
+function alert1(element) {
+	alert ('Это осознанное решение :) ?')
+}
+function myfun2(element) { // Удаление сохраненных юзеров
+var inputs = element.parentNode.getElementsByTagName('input');
+    for(var i = 0, inputs_len = inputs.length; i < inputs_len; i++) {
+        inputs[i].checked = inputs[i].checked ? false : false;
+    }
+	element.parentNode.style.display = "none";
+	 //document.querySelector("#u-chose").prepend(element.parentNode); // todo 
+}
+document.addEventListener('DOMContentLoaded', function() { // Прячем отмеченных юзеров
+var contr = document.getElementById('chosen-u');
+var inputs = contr.getElementsByTagName('input');
+for(var i=0; i<inputs.length; i++) 
+	if (inputs[i].checked) {
+inputs[i].parentNode.style.display='block';
+	} else {
+		inputs[i].parentNode.style.display='none';
+	}
+});
+/******** Craft-поиск-search  *********/
+function searchdrop() { // Кнопка всех пользователей
+ var opbtn = document.getElementById("u-chose");
+ var btbtn = document.getElementById("btbtn");
+ opbtn.classList.toggle("flex");
+  //document.getElementById("s-craft-s").value = "";
+ if (btbtn.innerHTML === "Выбрать пользователей"){
+	btbtn.innerHTML = "Скрыть пользователей"; 
+	document.getElementById("s-craft-s").style.display = "block";
+  } else {
+	btbtn.innerHTML = "Выбрать пользователей"; 
+	document.getElementById("s-craft-s").style.display = "none";
+  }
+}
+function filterFunction() { // Фильтр по пользователям
+	document.querySelector('#u-chose').classList.add("flex");
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("s-craft-s");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("u-chose");
+  a = div.getElementsByTagName("li");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+
+
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
