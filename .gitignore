@@ -1,0 +1,68 @@
+/.cache/
+/.ssh/
+/cache/
+/uploads/video/
+
+# IDE & System Related Files #
+.buildpath
+.editorconfig
+.project
+.settings
+.DS_Store
+.hg
+.idea
+.hgignore
+.hgignore.save
+
+# Local System Files (i.e. cache, logs, etc.)
+/administrator/cache/*
+/administrator/logs/*
+/tmp/*
+/Apache_2.4-PHP_7.2-7.4+Nginx_1.21_vhosta.conf
+/Apache_2.4-PHP_7.2-7.4+Nginx_1.21_vhostn.conf
+/images/comments/
+/images/chatavatars/
+/images/chatcomments/
+images/files/
+/uploads/*
+/templates/g5_helium/custom/css-compiled/
+/cache/*
+/configuration.php
+/administrator/logs/*
+/logs/*
+/.htaccess
+/components/com_community/assets/app/dist/_temp.*
+
+# ignore node dependency directories #
+node_modules/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bak
+*.iso
+*.jar
+*.rar
+*.tar
+*.docx
+*.doc
+*.pdf
+*.zip
+*.bmp
+
+# ignore log files and databases #
+log.txt
+*.log
+*.sql
+*.sqlite
